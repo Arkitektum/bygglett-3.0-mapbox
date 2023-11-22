@@ -2135,6 +2135,11 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
+threebox-plugin@^2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/threebox-plugin/-/threebox-plugin-2.2.7.tgz#7879e7c24a64197c31e15d92a6b1234dc93ef96b"
+  integrity sha512-H87Nm4w1PfisHPHzavTGXlwIoJpx2+QU57GooQYIhF51lsg+U5A0KGf3Jrv/HWsLCGOwV2BTnv7UTLfpO1EccQ==
+
 tinyqueue@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/tinyqueue/-/tinyqueue-2.0.3.tgz#64d8492ebf39e7801d7bd34062e29b45b2035f08"

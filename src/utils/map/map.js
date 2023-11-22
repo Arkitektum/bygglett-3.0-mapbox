@@ -1,4 +1,7 @@
 import { Map, NavigationControl } from 'mapbox-gl';
+import { Threebox } from 'threebox-plugin';
+import { createNaturtyperUtvalgteLayer } from './geojson';
+import { createWmsLayer } from './wms';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
@@ -6,20 +9,58 @@ export function createMap(container) {
    const map = new Map({
       accessToken: ACCESS_TOKEN,
       container,
-      center: [9.57, 59.12],
+      center: [6.003962, 60.246443],
       zoom: 12,
       style: 'mapbox://styles/mapbox/streets-v12'
    });
 
    map.addControl(new NavigationControl());
 
+   map.on('click', event => {
+      console.log(event);
+   });
+
+   const tb = (window.tb = new Threebox(map, map.getCanvas().getContext('webgl'), {
+      defaultLights: true,
+      enableSelectingObjects: true,
+      enableDraggingObjects: true,
+      enableRotatingObjects: true
+   }));
+
    map.on('load', () => {
-      //createWmsLayer(map);
+      createWmsLayer(map);
+      createNaturtyperUtvalgteLayer(map);
    });
 
    map.on('style.load', () => {
       createTerrain(map);
       create3dBuildings(map);
+
+      map.addLayer({
+         id: 'custom-threebox-model',
+         type: 'custom',
+         renderingMode: '3d',
+         onAdd: function () {
+            const scale = 1;
+            const options = {
+               obj: 'https://docs.mapbox.com/mapbox-gl-js/assets/metlife-building.gltf',
+               type: 'gltf',
+               scale: { x: scale, y: scale, z: 2.7 },
+               units: 'meters',
+               rotation: { x: 90, y: -90, z: 0 }
+            };
+
+            tb.loadObj(options, (model) => {
+               model.setCoords([6.003962, 60.246443]);
+               model.setRotation({ x: 0, y: 0, z: 241 });
+               tb.add(model);
+            });
+         },
+
+         render: function () {
+            tb.update();
+         }
+      });
    });
 
    return map;
@@ -75,27 +116,5 @@ function create3dBuildings(map) {
          }
       },
       labelLayerId
-   );
-}
-
-function createWmsLayer(map) {
-   map.addSource('stormflo', {
-      type: 'raster',
-      tiles: [
-         'https://wms.geonorge.no/skwms1/wms.stormflo?&layers=stormflona_intervall20ar&REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&crs=EPSG:3857&FORMAT=image/png&STYLES=&TRANSPARENT=true&WIDTH=512&HEIGHT=512&bbox={bbox-epsg-3857}'
-      ],
-      tileSize: 512,
-      minzoom: 14,
-      maxzoom: 18
-   });
-
-   map.addLayer(
-      {
-         'id': 'stormflo',
-         'type': 'raster',
-         'source': 'stormflo',
-         'paint': {},
-      },
-      'building'
    );
 }
