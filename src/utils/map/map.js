@@ -2,10 +2,11 @@ import { Map, NavigationControl, Popup } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
 import { createNaturtyperUtvalgteLayer } from './geojson';
 import { createWmsLayer } from './wms';
-import { createBoundingBox } from 'utils/helpers';
-import * as THREE from 'three';
-import style  from './map.module.scss';
+import { getObjectArea } from 'utils/helpers';
+import style from './map.module.scss';
 import { radiansToDegrees } from '@turf/helpers';
+import transformRotate from '@turf/transform-rotate';
+import booleanIntersects from '@turf/boolean-intersects';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
@@ -107,23 +108,36 @@ export function createMap(container) {
             tb.loadObj(options, (model) => {
                model.setCoords([6.004476482266369, 60.24443606674362, 15]);
 
+
+
+               map.addSource('object-area', {
+                  type: 'geojson',
+                  data: getObjectArea(model)
+               });
+
+               map.addLayer({
+                  id: 'object-area',
+                  type: 'fill',
+                  source: 'object-area',
+                  paint: {
+                     'fill-color': 'red',
+                     'fill-opacity': 0.4
+                  }
+               })
+
                model.addEventListener('ObjectDragged', event => {
-                  const obj = event.target;
+                  const object = event.target;
+                  const area = getObjectArea(object);
 
-                  const b = radiansToDegrees(obj.rotation.z)
+                  const features = map.querySourceFeatures('naturtyper-utvalgte', {
+                     sourceLayer: 'naturtyper-utvalgte'
+                  });
 
-                  console.log(b);
+                  console.log('Intersects: ', features.some(feature => booleanIntersects(feature.geometry, area)));
+
+                  const source = map.getSource('object-area');
+                  source.setData(area)
                   
-                  //debugger
-                  /*mesh.geometry.applyMatrix( mesh.matrix );
-                  mesh.matrix.identity();*/
-
-                  // console.log(event.target.coordinates);
-                  // console.log(event.target.rotation);
-                  // console.log(event.target.left);
-                  //console.log(event.target.matrix.elements);
-                  const boundingBox = createBoundingBox(event.target);
-                  //console.log(boundingBox);
                }, false);
 
                tb.add(model);

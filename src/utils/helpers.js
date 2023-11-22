@@ -1,16 +1,25 @@
-import { lengthToDegrees, polygon } from '@turf/helpers';
+import { lengthToDegrees, polygon, radiansToDegrees } from '@turf/helpers';
+import transformRotate from '@turf/transform-rotate';
 
-export function createBoundingBox(object) {
-   const { x, y } = object.modelSize;
-   const coordinates = object.coordinates;
+export function getObjectArea(object) {
+   const { rotation, coordinates, modelSize } = object;
+   const [centerLat, centerLon] = coordinates;
+   const { x, y } = modelSize;
    const lat = lengthToDegrees(x, 'meters');
    const lon = lengthToDegrees(y / 2, 'meters');
 
-   return polygon([[
-      [coordinates[0] - lat, coordinates[1] - lon],
-      [coordinates[0] + lat, coordinates[1] - lon],
-      [coordinates[0] + lat, coordinates[1] + lon],
-      [coordinates[0] - lat, coordinates[1] + lon],
-      [coordinates[0] - lat, coordinates[1] - lon]
+   const area = polygon([[
+      [centerLat - lat, centerLon - lon],
+      [centerLat + lat, centerLon - lon],
+      [centerLat + lat, centerLon + lon],
+      [centerLat - lat, centerLon + lon],
+      [centerLat - lat, centerLon - lon]
    ]]);
+
+   if (rotation.z !== 0) {
+      const angle = radiansToDegrees(rotation.z);
+      transformRotate(area, -angle, { pivot: [coordinates[0], coordinates[1]], mutate: true });
+   }
+
+   return area;
 }
