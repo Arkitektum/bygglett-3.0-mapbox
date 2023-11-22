@@ -1,7 +1,17 @@
-.popup {    
+.popup {  
+    font-size: 1.1rem;  
     min-width: 300px;
     color: #003045;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     a {
         color: #003045;
+    }
+    p {
+        font-size: .9rem;
+    }
+    ul {
+        font-size: .7rem;
     }
 }
