@@ -10,7 +10,7 @@ export function createMap(container) {
       accessToken: ACCESS_TOKEN,
       container,
       center: [6.003962, 60.246443],
-      zoom: 12,
+      zoom: 18,
       style: 'mapbox://styles/mapbox/streets-v12'
    });
 
@@ -28,8 +28,8 @@ export function createMap(container) {
    }));
 
    map.on('load', () => {
-      createWmsLayer(map);
-      createNaturtyperUtvalgteLayer(map);
+      //createWmsLayer(map);
+      //createNaturtyperUtvalgteLayer(map);
    });
 
    map.on('style.load', () => {
@@ -41,21 +41,39 @@ export function createMap(container) {
          type: 'custom',
          renderingMode: '3d',
          onAdd: function () {
-            const scale = 1;
+            const scale = 0.0015;
             const options = {
-               obj: 'https://docs.mapbox.com/mapbox-gl-js/assets/metlife-building.gltf',
-               type: 'gltf',
-               scale: { x: scale, y: scale, z: 2.7 },
-               units: 'meters',
+               obj: '/modern_home.glb',
+               type: 'glb',
+               scale: { x: scale, y: scale, z: scale },
+               units: 'm',
+               anchor: 'auto',
                rotation: { x: 90, y: -90, z: 0 }
             };
 
             tb.loadObj(options, (model) => {
-               model.setCoords([6.003962, 60.246443]);
-               model.setRotation({ x: 0, y: 0, z: 241 });
+               model.setCoords([6.003962, 60.246443, 15]);
+               debugger
                tb.add(model);
+               model.drawBoundingBox();
             });
-         },
+         },         
+         // onAdd: function () {
+         //    const scale = 1.5;
+         //    const options = {
+         //       obj: '/small_modern_garage.glb',
+         //       type: 'glb',
+         //       scale: { x: scale, y: scale, z: scale },
+         //       units: 'm',
+         //       anchor: 'auto',
+         //       rotation: { x: 90, y: -90, z: 0 }
+         //    };
+
+         //    tb.loadObj(options, (model) => {
+         //       model.setCoords([6.003962, 60.246443, 15]);
+         //       tb.add(model);
+         //    });
+         // },
 
          render: function () {
             tb.update();
