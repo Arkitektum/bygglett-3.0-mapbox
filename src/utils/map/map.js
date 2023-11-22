@@ -1,7 +1,8 @@
-import { Map, NavigationControl } from 'mapbox-gl';
+import { Map, NavigationControl, Popup } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
 import { createNaturtyperUtvalgteLayer } from './geojson';
 import { createWmsLayer } from './wms';
+import style  from './map.module.scss';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
@@ -18,9 +19,17 @@ export function createMap(container) {
 
    map.addControl(new NavigationControl());
 
-   map.on('click', event => {
-      console.log(event);
-   });
+  map.on('click', 'hul-eik', (e) => {
+// Copy coordinates array.
+
+const description = '<strong>' + e.features[0].properties.utvalgtNaturtypeTekst + '</strong>' +
+                     '<ul><li>' + e.features[0].properties.områdenavn + '</li>' +
+                     '<li><a href=" ' + e.features[0].properties.faktaark + ' ">Faktaark </a></li></ul>' ;
+
+ 
+new Popup({ className: style.popup }).setLngLat([e.lngLat.lng , e.lngLat.lat]).setHTML(description).addTo(map);
+  })
+
 
    const tb = (window.tb = new Threebox(map, map.getCanvas().getContext('webgl'), {
       defaultLights: true,
@@ -31,6 +40,15 @@ export function createMap(container) {
 
    map.on('load', () => {
       //createWmsLayer(map);
+   map.on('mouseenter', 'places', () => {
+      map.getCanvas().style.cursor = 'pointer';
+      });
+       
+      // Change it back to a pointer when it leaves.
+      map.on('mouseleave', 'places', () => {
+      map.getCanvas().style.cursor = '';
+      });
+   
       createNaturtyperUtvalgteLayer(map);
    });
 

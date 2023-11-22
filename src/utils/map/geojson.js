@@ -11,7 +11,7 @@ export function createNaturtyperUtvalgteLayer(map) {
       'type': 'fill',
       'source': 'naturtyper-utvalgte',
       'paint': {
-         'fill-color': 'red',
+         'fill-color': 'green',
          'fill-opacity': 0.4
       },
       'filter': ['all',
