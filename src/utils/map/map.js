@@ -3,7 +3,9 @@ import { Threebox } from 'threebox-plugin';
 import { createNaturtyperUtvalgteLayer } from './geojson';
 import { createWmsLayer } from './wms';
 import { createBoundingBox } from 'utils/helpers';
+import * as THREE from 'three';
 import style  from './map.module.scss';
+import { radiansToDegrees } from '@turf/helpers';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
@@ -106,10 +108,20 @@ export function createMap(container) {
                model.setCoords([6.004476482266369, 60.24443606674362, 15]);
 
                model.addEventListener('ObjectDragged', event => {
+                  const obj = event.target;
+
+                  const b = radiansToDegrees(obj.rotation.z)
+
+                  console.log(b);
+                  
+                  //debugger
+                  /*mesh.geometry.applyMatrix( mesh.matrix );
+                  mesh.matrix.identity();*/
+
                   // console.log(event.target.coordinates);
                   // console.log(event.target.rotation);
                   // console.log(event.target.left);
-                  console.log(event.target.matrix.elements);
+                  //console.log(event.target.matrix.elements);
                   const boundingBox = createBoundingBox(event.target);
                   //console.log(boundingBox);
                }, false);
