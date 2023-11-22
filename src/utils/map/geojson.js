@@ -6,19 +6,22 @@ export function createNaturtyperUtvalgteLayer(map) {
       'data': naturtyperUtvalgte
    });
 
-   map.addLayer({
-      'id': 'hul-eik',
-      'type': 'fill',
-      'source': 'naturtyper-utvalgte',
-      'paint': {
-         'fill-color': 'red',
-         'fill-opacity': 0.4
+   map.addLayer(
+      {
+         'id': 'hul-eik',
+         'type': 'fill',
+         'source': 'naturtyper-utvalgte',
+         'paint': {
+            'fill-color': 'red',
+            'fill-opacity': 0.4
+         },
+         'filter': ['all',
+            ['==', '$type', 'Polygon'],
+            ['==', 'utvalgtNaturtype', 'UN03'],
+         ]
       },
-      'filter': ['all',
-         ['==', '$type', 'Polygon'],
-         ['==', 'utvalgtNaturtype', 'UN03'],
-      ]
-   });
+      'buildings'
+   );
 
    // map.addLayer({
    //    "id": "polygon-stripes-example",
