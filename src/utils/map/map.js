@@ -9,8 +9,10 @@ export function createMap(container) {
    const map = new Map({
       accessToken: ACCESS_TOKEN,
       container,
-      center: [6.003962, 60.246443],
+      center: [6.004476482266369, 60.24443606674362],
       zoom: 18,
+      pitch: 60,
+      bearing: -60,
       style: 'mapbox://styles/mapbox/streets-v12'
    });
 
@@ -29,7 +31,7 @@ export function createMap(container) {
 
    map.on('load', () => {
       //createWmsLayer(map);
-      //createNaturtyperUtvalgteLayer(map);
+      createNaturtyperUtvalgteLayer(map);
    });
 
    map.on('style.load', () => {
@@ -41,9 +43,9 @@ export function createMap(container) {
          type: 'custom',
          renderingMode: '3d',
          onAdd: function () {
-            const scale = 0.0015;
+            const scale = 1;
             const options = {
-               obj: '/modern_home.glb',
+               obj: '/moderne-hus.glb',
                type: 'glb',
                scale: { x: scale, y: scale, z: scale },
                units: 'm',
@@ -52,10 +54,8 @@ export function createMap(container) {
             };
 
             tb.loadObj(options, (model) => {
-               model.setCoords([6.003962, 60.246443, 15]);
-               debugger
-               tb.add(model);
-               model.drawBoundingBox();
+               model.setCoords([6.004476482266369, 60.24443606674362, 15]);
+               tb.add(model);               
             });
          },         
          // onAdd: function () {
