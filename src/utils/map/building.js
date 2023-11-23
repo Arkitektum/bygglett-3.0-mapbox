@@ -1,5 +1,7 @@
-import booleanIntersects from "@turf/boolean-intersects";
-import { getObjectArea } from "utils/helpers";
+import booleanIntersects from '@turf/boolean-intersects';
+import { getObjectArea } from 'utils/helpers';
+import { setIntersection } from 'store/slices/mapSlice';
+import store from 'store';
 
 export function createBuilding(map, location, altitude, building) {
    map.addLayer({
@@ -21,42 +23,56 @@ export function createBuilding(map, location, altitude, building) {
          window.tb.loadObj(options, model => {
             model.setCoords([location[0], location[1], altitude]);
 
-            map.addSource('object-area', {
-               type: 'geojson',
-               data: getObjectArea(model)
-            });
-
-            map.addLayer({
-               id: 'object-area',
-               type: 'fill',
-               source: 'object-area',
-               paint: {
-                  'fill-color': 'red',
-                  'fill-opacity': 0.4
-               }
-            })
+            addObjectLayer(map, model);
 
             model.addEventListener('ObjectDragged', event => {
-               const object = event.target;
-               const area = getObjectArea(object);
-
-               const features = map.querySourceFeatures('naturtyper-utvalgte', {
-                  sourceLayer: 'naturtyper-utvalgte'
-               });
-
-               console.log('Intersects: ', features.find(feature => booleanIntersects(feature.geometry, area))?.properties);
-
-               const source = map.getSource('object-area');
-               source.setData(area)
-
+               handleObjectDragged(event.target, map);
             }, false);
 
             window.tb.add(model);
          });
       },
 
-      render: function () {
+      render: () => {
          window.tb.update();
+      }
+   });
+}
+
+function handleObjectDragged(object, map) {
+   const area = getObjectArea(object);
+   const source = map.getSource('object-area');
+
+   source.setData(area);
+
+   const features = map.querySourceFeatures('naturtyper-utvalgte', { sourceLayer: 'naturtyper-utvalgte' });
+   const intersecting = features.find(feature => booleanIntersects(feature.geometry, area));
+   let color = 'green';
+
+   if (intersecting) {
+      const { state, tile, ...feature } = intersecting.toJSON();
+      store.dispatch(setIntersection(feature));
+      color = 'red';
+   } else {
+      store.dispatch(setIntersection(null));
+   }
+
+   map.setPaintProperty('object-area', 'fill-color', color);
+}
+
+function addObjectLayer(map, model) {
+   map.addSource('object-area', {
+      type: 'geojson',
+      data: getObjectArea(model)
+   });
+
+   map.addLayer({
+      id: 'object-area',
+      type: 'fill',
+      source: 'object-area',
+      paint: {
+         'fill-color': 'green',
+         'fill-opacity': 0.4
       }
    });
 }
