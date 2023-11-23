@@ -44,12 +44,11 @@ export function createBuilding(map, location, altitude, building) {
                   sourceLayer: 'naturtyper-utvalgte'
                });
 
-               console.log(features.length)
                console.log('Intersects: ', features.find(feature => booleanIntersects(feature.geometry, area))?.properties);
 
                const source = map.getSource('object-area');
                source.setData(area)
-               
+
             }, false);
 
             window.tb.add(model);

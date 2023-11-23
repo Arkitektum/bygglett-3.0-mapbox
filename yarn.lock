@@ -576,6 +576,18 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
+"@types/jsts@^0.17.22":
+  version "0.17.22"
+  resolved "https://registry.yarnpkg.com/@types/jsts/-/jsts-0.17.22.tgz#c7327a674c04e59000f9ce48aa7b45d4b5dc2a4e"
+  integrity sha512-LrkbxjvLT/89+eib+PkjlNTYFp/0YM81mY0OL3BNlrRYU9M/sGRtLoJ1dC7hQ+pqNjAnOU0x66Rn7jPIXlrqBw==
+  dependencies:
+    "@types/openlayers" "*"
+
+"@types/openlayers@*":
+  version "4.6.23"
+  resolved "https://registry.yarnpkg.com/@types/openlayers/-/openlayers-4.6.23.tgz#583fba48d304ecdcc06fad311b8b511fdb83bdee"
+  integrity sha512-7jCPIa4D4LV03Rttae1AEqvkIN0+nc6Snz4IgA/IjsJD5O3ONxpscqIOdp1qAGuAsikR/ZC9vrPF9np8JRc6ig==
+
 "@types/prop-types@*":
   version "15.7.11"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
@@ -1680,6 +1692,11 @@ json5@^1.0.2:
   integrity sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==
   dependencies:
     minimist "^1.2.0"
+
+jsts@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/jsts/-/jsts-2.11.0.tgz#ada4f350796dc0d66a8336ab95b5fb2990406561"
+  integrity sha512-1++68krnA5CJ8DguYiqNWAtoDJl/4c6yLVKp+DylTKsOY73JERGRXYFT7ncPipHc33lgnjVWReKJO8+gpwm5ag==
 
 "jsx-ast-utils@^2.4.1 || ^3.0.0":
   version "3.3.5"
