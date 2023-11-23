@@ -3,8 +3,8 @@ import MapView from 'features/MapView';
 import styles from './App.module.scss'
 
 function App() {
-   const location = [6.004476482266369, 60.24443606674362];
-   const altitude = 15;
+   const location = [6.014302890886796, 60.265660111660935];
+   const altitude = 2;
    const building = 'moderne-hus';
 
    return (

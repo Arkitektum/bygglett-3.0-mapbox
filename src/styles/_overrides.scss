@@ -1,3 +1,8 @@
+.mapboxgl-map.ready {
+   opacity: 1;
+   transition: all 1s;
+}
+
 .mapboxgl-popup {
    max-width: 360px !important;
 
