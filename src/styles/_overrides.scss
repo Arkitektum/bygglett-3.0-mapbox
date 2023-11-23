@@ -1,0 +1,13 @@
+.mapboxgl-popup {
+   max-width: 360px !important;
+
+   .mapboxgl-popup-content {
+      padding: 18px;
+   }
+   
+   .mapboxgl-popup-close-button {
+      font-size: 24px;
+      top: 6px;
+      right: 3px;
+   }
+}

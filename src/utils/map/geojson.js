@@ -17,7 +17,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          },
          'filter': ['all',
             ['==', '$type', 'Polygon'],
-            ['==', 'utvalgtNaturtype', 'UN03'],
+            ['==', 'utvalgtNaturtype', 'UN03']
          ]
       },
       'buildings'

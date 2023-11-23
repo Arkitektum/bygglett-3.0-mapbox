@@ -1,0 +1,1365 @@
+[
+   {
+      "kontekstType": "Byggesak-treff-aktsomhet-flom",
+      "id": "44ef4297-d5a5-4fab-9db3-d67429d7a5f0",
+      "tittel": "Aktsomhetsområde for flom og erosjon",
+      "forklarendeTekst": "NVEs aktsomhetskart for flom viser hvilke arealer som kan være utsatt for flom- og erosjonsfare. Kartet er egnet til bruk i kommuneplanens arealdel. Kartet vil aldri kunne bli helt nøyaktig, men er godt nok til å gi en indikasjon på hvor flomfaren bør vurderes nærmere, dersom det er aktuelt med ny utbygging. [Klikk her](https://gis3.nve.no/metadata/produktark/Produktark_FlomAktsomhet.pdf) for mer informasjon om aktsomhetskartet.\n\nSikkerhet mot flom må dokumenteres ivaretatt i henhold til krav gitt i byggteknisk forskrift (TEK17) [§ 7-2](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-2/). Se NVEs retningslinjer 2/2011 [Flaum og skredfare i arealplanar](https://publikasjoner.nve.no/retningslinjer/2011/retningslinjer2011_02.pdf) for mer informasjon om videre fremgangsmåte.\n\nFor tiltak i sikkerhetsklasse F3 og tiltak som omfattes av § 7-2 første ledd, må det alltid gjennomføres en faresonekartlegging/-utredning. **Merk likevel at aktsomhetskartet kan være unøyaktig. Lokale terrengforhold bør vurderes før flomfaren kan utelukkes. Det samme gjelder tilstedeværelsen av mindre bekker som ikke har blitt plukket opp i analysen.**\n\nLangs små vassdrag (nedbørsfelt < 20 km2) bør byggegrense til vassdraget være minimum 20 m. For større vassdrag bør byggegrense settes til minimum 50-100 meter. Lokalt terreng og høydeforskjell kan tilsi at større avstand bør vurderes.",
+      "lenker": [
+         {
+            "href": "https://publikasjoner.nve.no/retningslinjer/2011/retningslinjer2011_02.pdf",
+            "tittel": "NVEs retningslinjer 2/2011 Flaum og skredfare i arealplanar"
+         },
+         {
+            "href": "http://publikasjoner.nve.no/veileder/2015/veileder2015_03.pdf",
+            "tittel": "NVEs veileder 3/2015 Flaumfare langs bekker"
+         },
+         {
+            "href": "https://www.nve.no/arealplanlegging/bygge-og-dispensasjonssaker/",
+            "tittel": "NVEs nettsider om bygge- og dispensasjonssaker"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger innenfor et område hvor det kan være fare for flom og/eller erosjon. Reell fare må avklares og tas hensyn til.",
+      "muligeTiltak": "Flytt tiltaket vekk fra fareutsatt område.\nDokumenter tilstrekkelig sikkerhet mot flom og erosjon i henhold til krav gitt i byggteknisk forskrift (TEK17) § 7-2.",
+      "veiledning": "Merk likevel at aktsomhetskartet kan være unøyaktig. Lokale terrengforhold bør vurderes før flomfaren kan utelukkes. Det samme gjelder tilstedeværelsen av mindre bekker som ikke har blitt plukket opp i analysen.",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Flom aktsomhetsområder",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/60c5024f-bf93-4d7a-888a-5fe001427195",
+         "bufferAvstand": null,
+         "bufferText": "Tiltaket ligger nært et område hvor det kan være fare for flom. Reell flomfare må avklares og tas hensyn til.",
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Flomaktsomhetsomrader/1.1",
+         "typeReferanse": {
+            "objekttype": "FlomAktsomhetOmr",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-2/",
+            "tittel": "TEK17 Kapittel 7 - Sikkerhet mot naturpåkjenninger § 7-2. Sikkerhet mot flom og stormflo"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-aktsomhet-Jord-og-flomskred",
+      "id": "643479b5-41d9-4d66-8069-18f746141a41",
+      "tittel": "Aktsomhetsområder for jord- og flomskred",
+      "forklarendeTekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for jord- og flomskred. Dette betyr at område kan være utsatt for skred og en fagkyndig må utrede den reelle faren i henhold til krav til sikkerhet gitt i byggteknisk forskrift (TEK17 ) [§ 7-3](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/).",
+      "lenker": [
+         {
+            "href": "https://veileder-skredfareutredning-bratt-terreng.nve.no/",
+            "tittel": "NVEs veileder Utredning av sikkerhet mot skred i bratt terreng"
+         },
+         {
+            "href": "https://www.nve.no/arealplanlegging/bygge-og-dispensasjonssaker/",
+            "tittel": "NVEs nettsider om bygge- og dispensasjonssaker"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for jord- og flomskred. Tiltakshaver må sørge for at sikkerhet mot skred dokumenteres ivaretatt av fagkyndig i henhold til byggteknisk forskrift (TEK17) § 7-3.",
+      "muligeTiltak": "Flytte tiltaket ut av aktsomhetsområdet.\nFå fagkyndig til å dokumentere tilstrekkelig sikkerhet mot skred for tiltaket i henhold til byggteknisk forskrift (TEK17) §7-3.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Jord- og flomskred aktsomhetsområder",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/30e1883e-70e9-4510-9e97-00edbdcddc02",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Skredaktsomhet/1.2",
+         "typeReferanse": {
+            "objekttype": "PotensieltSkredfareOmr",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-aktsomhet-kvikkleireskred",
+      "id": "d34718b6-da67-47c7-a61d-05f222f8e613",
+      "tittel": "Aktsomhetsområder for kvikkleireskred",
+      "forklarendeTekst": "Kvikkleire kan  finnes i områder hvor det er marin leire. Marin leire finnes under marin grense, som er grensen for hvor høyt havet stod inn over land etter forrige istid. \n\nBenytt [NVEs kartbaserte veileder](https://arcg.is/T9rXy), steg 12-14 for å avgjøre om tiltaket ligger innenfor et aktsomhetsområde for kvikkleireskred i henhold til [NVEs veileder 1/2019 *Sikkerhet mot kvikkleireskred*](https://publikasjoner.nve.no/veileder/2019/veileder2019_01.pdf). Ved påvist berg i dagen eller grunt til berg (< 2 m), er det ikke fare for at det vil utløses kvikkleireskred.  Du må også vurdere om det kan finnes marin leire høyere opp i terrenget - slik at planområdet kan bli truffet av et skred som løsner derfra  (Terreng som kan inngå i utløpsområdet for et skred er typisk 3x løsneområdets lengde målt fra nedkant av løsneområdet (se neste steg for mer informasjon)).",
+      "lenker": [
+         {
+            "href": "https://arcg.is/T9rXy",
+            "tittel": "NVEs kartbaserte veileder"
+         },
+         {
+            "href": "https://publikasjoner.nve.no/veileder/2019/veileder2019_01.pdf",
+            "tittel": "NVEs veileder 1/2019 Sikkerhet mot kvikkleireskred"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/nadag_mobil/",
+            "tittel": "Karttjenesten NADAG (grunnundersøkelser)"
+         },
+         {
+            "href": "https://www.ngu.no/emne/nadag",
+            "tittel": "Informasjon om NADAG (grunnundersøkelser)"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger under marin grense. Det kan være marin leire i grunnen og dermed også mulighet for at tiltaket ligger innenfor et aktsomhetsområde for kvikkleireskred.",
+      "muligeTiltak": "Sjekk om tiltaket ligger innenfor areal som defineres som aktsomhetsområde ved å følge steg 12-14 i NVEs kartbaserte veileder.\nFlytte tiltaket ut av aktsomhetsområdet.\nFå fagkyndig til å dokumentere tilstrekkelig sikkerhet mot skred for tiltaket i henhold til NVEs veileder 1/2019 og byggteknisk forskrift (TEK17) §7-3.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Mulighet for marin leire",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/641a81c2-9354-473b-b8f0-2b1e2ab3930a",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": null,
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-aktsomhet-snøskred",
+      "id": "7831236b-c9c1-4d5f-af4b-cac0304d7d6e",
+      "tittel": "Aktsomhetsområder for snøskred",
+      "forklarendeTekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for jord- og flomskred. Dette betyr at område kan være utsatt for skred og en fagkyndig må utrede den reelle faren i henhold til krav til sikkerhet gitt i byggteknisk forskrift (TEK17 ) [§ 7-3](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/).",
+      "lenker": [
+         {
+            "href": "https://veileder-skredfareutredning-bratt-terreng.nve.no/",
+            "tittel": "NVEs veileder Utredning av sikkerhet mot skred i bratt terreng"
+         },
+         {
+            "href": "https://www.nve.no/arealplanlegging/bygge-og-dispensasjonssaker/",
+            "tittel": "NVEs nettsider om bygge- og dispensasjonssaker"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for jord- og flomskred. Tiltakshaver må sørge for at sikkerhet mot skred dokumenteres ivaretatt av fagkyndig i henhold til byggteknisk forskrift (TEK17) § 7-3.",
+      "muligeTiltak": "Flytte tiltaket ut av aktsomhetsområdet.\nFå fagkyndig til å dokumentere tilstrekkelig sikkerhet mot skred for tiltaket i henhold til byggteknisk forskrift (TEK17) §7-3.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Snøskred - aktsomhetsområder",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/e9542260-6315-4770-b085-86e95179f735",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Skredaktsomhet/1.2",
+         "typeReferanse": {
+            "objekttype": "PotensieltSkredfareOmr",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-aktsomhet-steinsprang",
+      "id": "2d405ce6-98ea-40f9-905b-f8a0d5c96224",
+      "tittel": "Aktsomhetsområder for steinsprang",
+      "forklarendeTekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for steinsprang. Dette betyr at område kan være utsatt for skred og en fagkyndig må utrede den reelle faren i henhold til krav til sikkerhet gitt i byggteknisk forskrift (TEK17 ) [§ 7-3](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/).",
+      "lenker": [
+         {
+            "href": "https://veileder-skredfareutredning-bratt-terreng.nve.no/",
+            "tittel": "NVEs veileder Utredning av sikkerhet mot skred i bratt terreng"
+         },
+         {
+            "href": "https://www.nve.no/arealplanlegging/bygge-og-dispensasjonssaker/",
+            "tittel": "NVEs nettsider om bygge- og dispensasjonssaker"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger helt eller delvis innenfor aktsomhetsområde for steinsprang. Tiltakshaver må sørge for at sikkerhet mot skred dokumenteres ivaretatt av fagkyndig i henhold til byggteknisk forskrift (TEK17) § 7-3.",
+      "muligeTiltak": "Flytte tiltaket ut av aktsomhetsområdet.\nFå fagkyndig til å dokumentere tilstrekkelig sikkerhet mot skred for tiltaket i henhold til byggteknisk forskrift (TEK17) §7-3.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Steinsprang - aktsomhetsområder",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/02c6d51c-4e8c-4948-a620-dc046c8cb747",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Skredaktsomhet/1.2",
+         "typeReferanse": {
+            "objekttype": "PotensieltSkredfareOmr",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-brønner",
+      "id": "83356f63-ada8-437b-8cc9-ae8f73cf1a3b",
+      "tittel": "Brønner",
+      "forklarendeTekst": "Dataene viser lokalisering av grunnvanns- og energibrønner. Det er innmeldingsplikt av brønner i Norge. Borefirma skal registrere brønner når det bores, men privatpersoner kan etterregistrere brønner.",
+      "lenker": [
+         {
+            "href": "https://www.ngu.no/grunnvanninorge",
+            "tittel": "Grunnvann i Norge"
+         }
+      ],
+      "dialogtekst": "Data om brønnen er basert på informasjon meldt inn av borefirma.",
+      "muligeTiltak": "",
+      "veiledning": "Om det finnes eksisterende brønner kan det være nyttig å vite for ev. å dele brønn eller i forhold til ødeleggelse eller påvirkning av eksisterende brønner.",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Grunnvannsborehull",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/82cd33ef-52dd-4c83-b2d6-e55a0941b33b",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "Produktspesifikasjon for Grunnvannsborehull er tilgjengelig på https://register.geonorge.no/data/documents/produktspesifikasjoner_Grunnvannsborehull_v1_produktspesifikasjon-ngu-grunnvannsborehull-ver1_0_.pdf",
+         "typeReferanse": {
+            "objekttype": "GrunnvannBorehull",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": null,
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-dybde-til-fjell",
+      "id": "aeae22d8-0880-495a-9978-3a6ff97503bf",
+      "tittel": "Dybde til fjell",
+      "forklarendeTekst": "Boredata kan gi informasjon om dybde til fjell. ",
+      "lenker": [
+         {
+            "href": "https://geo.ngu.no/kart/nadag_mobil/",
+            "tittel": "Karttjenesten NADAG (grunnundersøkelser)"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/granada_mobil/",
+            "tittel": "Karttjenesten GRANADA (Nasjonal grunnvannsdatabase)"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/losmasse_mobil/",
+            "tittel": "Karttjenesten Løsmasser"
+         }
+      ],
+      "dialogtekst": "Informasjon om grunnforhold kan man finne på løsmassekart fra NGU. For å få Informasjon om forholdene under overflaten kan man f.eks. benytte data fra boringer. Informasjon om boringer finnes både i GRANADA (nasjonal grunnvannsdatabase) og i NADAG (nasjonal database for grunnundersøkelse). Både data fra løsmassekart og fra boringer vil være av ulik kvalitet og detaljeringsgrad. Og områdene er grovt kartlagt i overflaten i forhold til utbredelsen av løsmasser.",
+      "muligeTiltak": "Boredata kan gi verdifull informasjon, og det anbefales å sjekke hva som finnes av informasjon om boringer i databasene NADAG (geotekniske grunnundersøkelser) og GRANADA (grunnvannsborehull) for det aktuelle området.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Grunnvannsborehull",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/82cd33ef-52dd-4c83-b2d6-e55a0941b33b",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/GrunnvannBorehull/1.0",
+         "typeReferanse": {
+            "objekttype": "GrunnvannBorehull",
+            "attributt": "boretLengdeTilBerg",
+            "kodeverdi": null
+         }
+      },
+      "referanse": null,
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-energianlegg",
+      "id": "cc04ba06-1ad4-40cc-b961-389786a269ad",
+      "tittel": "Hensynssone for energianlegg",
+      "forklarendeTekst": "Sentral- og regionalnettanlegg, transformatorstasjoner og andre større kraftledninger som krever konsesjon etter energilova er unntatt saksbehandling etter pbl, jf. § 1-3. Mindre høyspenningsanlegg innenfor områdekonsesjonene faller innenfor virkeområdet til pbl. Disse kan reguleres som \"Teknisk infrastruktur\" etter pbl § 11-7 nr. 2.\n\nTil en konsesjon kan det følge rettighet til et rydde- og byggeforbudsbeltet, også omtalt som klausuleringsbelte, ryddebelte o.l. Dette er en korridor som nettselskapene får bruksrett til, for å kunne drifte og vedlikeholde nettanleggene på en forsvarlig måte. Nettselskapene bestemmer hva som er tillatt utover de absolutte kravene som fremkommer av forskrift om elektriske forsyningsanlegg. Innenfor beltet vil et nettselskap normalt ikke tillate oppføring av nybygg. Det er ingen fast bredde på byggeforbudsbeltet, men basert på erfaring fra konsesjonssøknader er totalt rydde- og byggeforbudsbelte for 66/132 kV på 20-30 meter og for 300/420 kV på 40 meter. \n\nDet må vurderes om tiltaket skal avklares med netteier.\n\nMinstekrav til avstand til kraftledninger er regulert gjennom forskrift om elektriske forsyningsanlegg. Direktoratet for samfunnssikkerhet og beredskap (DSB) har i Veiledning til forskrift om elektriske forsyningsanlegg publisert tabeller med minsteavstandskrav til kraftledninger. De absolutte avstandskravene er i størrelsesorden 2-10 meter. ",
+      "lenker": [
+         {
+            "href": "https://www.dsb.no/lover/elektriske-anlegg-og-elektrisk-utstyr/veiledning-til-forskrift/veiledning-til-forskrift-om-elektriske-forsyningsanlegg/",
+            "tittel": " Veiledning til forskrift om elektriske forsyningsanlegg"
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger nært energianlegg (Høyspentlinjer, transformatorstasjoner, etc. Det kan foreligge restriksjoner for oppføring av tiltak nært slike anlegg.",
+      "muligeTiltak": "Plasser tiltaket lenger vekk fra energianlegget.\nTa kontakt med netteier for avklaring om det er greit at tiltaket gjennomføres.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Nettanlegg",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/9f71a24b-9997-409f-8e42-ce6f0c62e073",
+         "bufferAvstand": 40,
+         "bufferText": "Tiltaket ligger nært energianlegg (Høyspentlinjer, transformatorstasjoner, etc. Det kan foreligge restriksjoner for oppføring av tiltak nært slike anlegg.",
+         "bufferMuligeTiltak": "Plasser tiltaket lenger vekk fra energianlegget.\nTa kontakt med netteier for avklaring om det er greit at tiltaket gjennomføres.",
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Nettanlegg/1.0",
+         "typeReferanse": {
+            "objekttype": "EL_Luftlinje",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/1990-06-29-50",
+            "tittel": "Energilova"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-faresone-fjellskred",
+      "id": "a43cee7f-bcc4-44a9-b144-419a0c134a25",
+      "tittel": "Faresoner for fjellskred",
+      "forklarendeTekst": "Gjennom det statlige kartleggingsprogrammet for fjellskred blir ustabile fjellparti i Norge kartlagt og overvåket. NVE har ansvar for å kartlegge faren for fjellskred, og NGU utfører arbeidet på oppdrag fra NVE. Det blir gjort en systematisk oversiktskartlegging for å avdekke mulige ustabile fjellparti.\n\nUstabile fjellparti er klassifisert med fare og risiko. Utvalgte fjellpartier overvåkes kontinuerlig eller periodisk. Hvis fjellskredet treffer elv eller sjø oppstår det en flodbølge (sekundær virkning) som også kan berøre områder langt fra skredet. For utvalgte fjellskredobjekt er fareområder fra flodbølgen kartlagt som faresoner med sannsynlighet. Faresonene kan brukes direkte i arealplanlegging.\n\nKrav til sikkerhet er gitt i byggteknisk forskrift (TEK17) [§ 7-3](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/). For sekundærområder fra kontinuerlig overvåkede fjellpartier kan unntaksregel i TEK17 [§ 7-4](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-4/) vurderes. Merk her at det ikke gjelder førsteledds-tiltak og at alle vilkår i § 7-4 skal være oppfylt.",
+      "lenker": [],
+      "dialogtekst": "Tiltaket ligger i et område som kan bli berørt av fjellskred eller sekundære virkninger etter et fjellskred.",
+      "muligeTiltak": "Sjekke hvilke krav til sikkerhet som gjelder for ønsket tiltak i byggteknisk forskrift (TEK17) §§ 7-3 og 7-4 og om ønsket tiltak likevel oppfyller krav til sikkerhet.\nFlytte tiltaket ut av faresonen.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.\n",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Store fjellskred",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/17149f79-1289-4e3c-b964-94113eeb14c8",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-faresone-flom",
+      "id": "5adab8dc-b327-49ed-9336-e85fe2453a05",
+      "tittel": "Faresoner for flom",
+      "forklarendeTekst": "Det er utarbeidet faresonekart for flom (flomsonekart) for mange flomutsatte byer og tettsteder.\n\nFaresonekartene inneholder faresoner som skal vise oversvømt areal ved ulike gjentaksintervall for flom, for eksempel 20-årsflom, 200-årsflom, 1000-årsflom, og 200-årsflom med klimapåslag. I områder der det finnes både aktsomhetskart og faresonekart, gjelder faresonekartene foran aktsomhetskartene. Merk at faresonekartene i mange tilfeller ikke inkluderer mindre sidevassdrag. I slike tilfeller må aktsomhetskartet likevel vurderes.\n\nSelv om området er farekartlagt kan det likevel være lov å oppføre tiltak. Sjekk hvilke krav til sikkerhet som gjelder for ønsket tiltak i byggteknisk forskrift (TEK17) [§ 7-2](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-2/).  For å se detaljerte kart som viser utstrekning av de ulike flomsonene (med ulike gjentagelsesintervall), se [NVEs temakart for flom](https://temakart.nve.no/tema/flomsone). Avgjør hvordan det skal tas hensyn til klimaendringer, sjekk [klimaprofil](hhttps://klimaservicesenter.no/) for ditt fylke.\n\nLigger tiltaket innenfor kartlagt område, men utenfor aktuell faresone, er det dokumentert at sikkerhet mot flom er ivaretatt. Ligger planområdet innenfor aktuell flomsone må det planlegges sikringstiltak.",
+      "lenker": [],
+      "dialogtekst": "Tiltaket ligger helt eller delvis innenfor en faresone for flom.",
+      "muligeTiltak": "Sjekke hvilke krav til sikkerhet som gjelder for ønsket tiltak i byggteknisk forskrift (TEK17) § 7-2 og om ønsket tiltak likevel oppfyller krav til sikkerhet.\nFlytte tiltaket ut av faresonen.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Flomsoner",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/e95008fc-0945-4d66-8bc9-e50ab3f50401",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Flomsoner/1.1",
+         "typeReferanse": {
+            "objekttype": "Analyseområde",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-2/",
+            "tittel": "TEK17 Kapittel 7 - Sikkerhet mot naturpåkjenninger § 7-2. Sikkerhet mot flom og stormflo"
+         },
+         "annenLov": {
+            "href": "Plan- og bygningsloven § 28-1",
+            "tittel": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-faresone-kvikkleireskred",
+      "id": "2e84d54f-9e93-4559-8214-8cb21567fa04",
+      "tittel": "Faresoner for kvikkleireskred",
+      "forklarendeTekst": "Kvikkleire kan finnes i områder hvor det er marin leire. Marin leire finnes under marin grense, som er grensen for hvor høyt havet stod inn over land etter forrige istid. Det er utarbeidet faresonekart for kvikkleireskred for utvalgte områder i Norge.",
+      "lenker": [],
+      "dialogtekst": "Tiltaket ligger innenfor kartlagt faresone for kvikkleireskred. Det må dokumenteres at tiltaket tilfredsstiller krav til sikkerhet i henhold til NVEs veileder 1/2019 og byggteknisk forskrift (TEK17) §7-3.",
+      "muligeTiltak": "Flytte tiltaket ut av faresonen.\nSjekk om tiltaket faller inn under tiltakskategori K0 i henhold til NVEs veileder 1/2019, og om tiltaket kan utføres etter føringer gitt i vedlegg to i veilederen. Hvis føringer ikke kan følges, må det utarbeides en geoteknisk vurderings om dokumenterer tilfredsstillende sikkerhet.\nFå geotekniker med tilstrekkelig kompetanse til å dokumentere tilstrekkelig sikkerhet mot skred for tiltaket i henhold til NVEs veileder 1/2019 og byggteknisk forskrift (TEK17) §7-3.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Skredfaresoner",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/b2d5aaf8-79ac-40f3-9cd6-fdc30bc42ea1",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Skredfare/1.2",
+         "typeReferanse": {
+            "objekttype": "KvikkleireFaresone",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-faresone-skred-i-bratt-terreng",
+      "id": "c37bac2a-1e32-49f8-b633-a305c166ec38",
+      "tittel": "Faresoner for skred i bratt terreng",
+      "forklarendeTekst": "Det er utarbeidet faresonekart for skred i bratt terreng (snøskred, sørpeskred, flomskred, jordskred, steinsprang og steinskred) for utvalgte områder i Norge. Faresonekartene viser vanligvis faresoner med årlig gjentaksintervall i henhold til sikkerhetskravene i TEK17 § 7-3. Les mer om faresonekartene på NVEs nettsider [Om kartlegging av skredfare i bratt terreng.](https://www.nve.no/naturfare/utredning-av-naturfare/om-kart-og-kartlegging-av-naturfare/om-kartlegging-av-skredfare-i-bratt-terreng/).\n\nI områder som er farekartlagt kan man se bort ifra aktsomhetskartene for ulike typer skred i bratt terreng.\n\nSelv om området er farekartlagt  kan det likevel være lov å oppføre tiltak. Sjekk hvilke krav til sikkerhet som gjelder for ønsket tiltak i byggteknisk forskrift (TEK17) [§ 7-3](https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/). For å se detaljerte kart som viser utstrekning av de ulike faresonene (med ulike gjentagelsesintervall), se [NVEs temakart for skred i bratt terreng](https://temakart.nve.no/tema/skredfaresone). \n\nLigger tiltaket innenfor kartlagt område, men utenfor aktuell skredsone, er det dokumentert at sikkerhet mot skred er ivaretatt. Ligger planområdet innenfor aktuell skredsone må det planlegges sikringstiltak.",
+      "lenker": [],
+      "dialogtekst": "Tiltaket ligger helt eller delvis innenfor et område hvor reell fare for skred i bratt terreng er blitt kartlagt.",
+      "muligeTiltak": "Sjekke hvilke krav til sikkerhet som gjelder for ønsket tiltak i byggteknisk forskrift (TEK17) § 7-3 og om ønsket tiltak likevel oppfyller krav til sikkerhet.\nFlytte tiltaket ut av faresonen.\nHvis behov, utføre sikringstiltak etter råd fra fagkyndig.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Skredfaresoner",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/b2d5aaf8-79ac-40f3-9cd6-fdc30bc42ea1",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Skredfare/1.2",
+         "typeReferanse": {
+            "objekttype": "AnalyseområdeGr",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17/7/7-3/",
+            "tittel": "TEK 17 Kapittel 7 - Sikkerhet mot naturpåkjenninger - § 7-3 Sikkerhet mot skred"
+         },
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2008-06-27-71/KAPITTEL_4-9#%C2%A728-1",
+            "tittel": "Plan- og bygningsloven § 28-1"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-grunnvannspotensiale",
+      "id": "7e7686c3-114e-4398-bfaf-a5f4f3faeb25",
+      "tittel": "Grunnvannspotensiale",
+      "forklarendeTekst": "Grunnvann brukes til mange formål. Der grunnvann tradisjonelt ble brukt til drikkevann, brukes grunnvann i dag i industri, akvakultur og ikke minst som en kilde til energi.",
+      "lenker": [
+         {
+            "href": "https://www.ngu.no/grunnvanninorge",
+            "tittel": "Grunnvann i Norge"
+         }
+      ],
+      "dialogtekst": "Grunnvannspotensialet er grovt kartlagt, og andre kilder kan gi mer detaljert informasjon.",
+      "muligeTiltak": "Boredata og andre grunnundersøkelser kan også gi verdifull informasjon. Kontakt konsulenter for mer detaljert vurdering av grunnvannspotensialet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Løsmasser",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/3de4ddf6-d6b8-4398-8222-f5c47791a757",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "Produktspesifikasjon for Løsmasser er tilgjengelig på  https://register.geonorge.no/data/documents/produktspesifikasjoner_L%C3%B8smasser%20N50%20N250_v2_produktspesifikasjon-ngu-losmasser-ver3_0_.pdf",
+         "typeReferanse": {
+            "objekttype": "LosmasseFlate",
+            "attributt": "GrunnvannPotensiale",
+            "kodeverdi": null
+         }
+      },
+      "referanse": null,
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-marin-leire",
+      "id": "c2d69df7-2cb1-44c3-a0d0-de8f706850a6",
+      "tittel": "Mulighet for marin leire",
+      "forklarendeTekst": "Områder med marin leire kan være utsatt for skred. Områdene er grovt kartlagt i overflaten med hensyn til utbredelse av marin leire og data vil være av ulik kvalitet. Boredata vil gi mer informasjon om løsmasser og deres egenskaper i dybden.",
+      "lenker": [
+         {
+            "href": "https://www.ngu.no/emne/mulighet-marin-leire",
+            "tittel": "Informasjon om datasettet mulighet for marin leire"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/losmasse_mobil/",
+            "tittel": "Karttjenesten Løsmasser"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/nadag_mobil/",
+            "tittel": "Karttjenesten NADAG (grunnundersøkelser)"
+         },
+         {
+            "href": "https://www.ngu.no/emne/nadag",
+            "tittel": "Informasjon om NADAG (grunnundersøkelser)"
+         }
+      ],
+      "dialogtekst": "Vurder skredfaren i dette området om du skal sette opp bygninger eller legge adkomstvei.",
+      "muligeTiltak": "For å få vurdert skredfaren, kan du kontakte kommunen eller konsulent med geoteknisk kompetanse.",
+      "veiledning": "Her kan du lese mer om mulighet for marin leire: https://www.ngu.no/emne/mulighet-marin-leire",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Mulighet for marin leire",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/641a81c2-9354-473b-b8f0-2b1e2ab3930a",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "Produktspesifikasjon er tilgjengelig på https://register.geonorge.no/register/versjoner/produktspesifikasjoner/norges-geologiske-undersokelse/mulighet-for-marin-leire",
+         "typeReferanse": {
+            "objekttype": "",
+            "attributt": "MuligMarinLeire",
+            "kodeverdi": ""
+         }
+      },
+      "referanse": null,
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-mulighet-for-spredningsgrøft",
+      "id": "e7d74d62-be3a-47b4-a61c-6ae66bad2823",
+      "tittel": "Mulighet for spredningsgrøft",
+      "forklarendeTekst": "Her kan du antagelig bruke godkjent biologisk/kjemisk minirenseanlegg. Renseanlegg skal være sertifisert.\nRenset avløpsvann kan ledes til vassdrag med minimum 5 meters dyp, jordbruksgrøft eller konstruert spredningsgrøft.\n",
+      "lenker": [
+         {
+            "href": "https://geo.ngu.no/kart/losmasse_mobil/",
+            "tittel": "Velg temakart Infiltrasjonspotensiale i karttjenesten for Løsmasser"
+         },
+         {
+            "href": "https://nibio.no/tema/miljo/mindre-avlop/valg-av-renselosning",
+            "tittel": "Lenke til NIBIO om hvordan velge avløpsløsning"
+         }
+      ],
+      "dialogtekst": "Avløpsmulighetene er grovt kartlagt, og andre kilder kan gi mer detaljert informasjon.",
+      "muligeTiltak": "Det anbefales at du foretar en befaring på stedet, gjerne sammen med konsulenter eller ingeniører med kompetanse på vann- og avløpsanlegg. Boredata kan også gi verdifull informasjon. Kontakt kommunen vedrørende eventuelle krav mht. areal.",
+      "veiledning": "I karttjenesten for Løsmasser velges temakart Infiltrasjonspotensiale.",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Løsmasser",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/3de4ddf6-d6b8-4398-8222-f5c47791a757",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "Produktspesifikasjon for Løsmasser er tilgjengelig på  https://register.geonorge.no/data/documents/produktspesifikasjoner_L%C3%B8smasser%20N50%20N250_v2_produktspesifikasjon-ngu-losmasser-ver3_0_.pdf",
+         "typeReferanse": {
+            "objekttype": "LosmasseFlate",
+            "attributt": "InfiltrasjonPotensiale",
+            "kodeverdi": null
+         }
+      },
+      "referanse": null,
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturfare-stormflo-200-års",
+      "id": "9331fc68-bd27-4484-8570-c191a6bda5b1",
+      "tittel": "Stormflo 200-års nivå",
+      "forklarendeTekst": "Stormflo oppstår når påvirkning fra været gjør havets vannstand ekstra høy. Lavt luftttrykk fører til høy vannstand og vind kan i tillegg presse vann inn mot land. En ekstrem høy vannstand får vi når en stormflo faller sammen med høyt tidevann. Vær oppmerksom på at effekten av eventuelle overflatebølger vil komme i tillegg. Et 200-års returnivå er basert på en statistisk beregning på historiske data og betyr at nivået blir oversvømt i gjennomsnitt en gang hvert 200. år.",
+      "lenker": [
+         {
+            "href": "https://kartverket.no/til-sjos/se-havniva/referanseniva/vannstandsniva/",
+            "tittel": "Les mer om vannstandsnivå"
+         },
+         {
+            "href": "https://www.kartverket.no/til-sjos/se-havniva/lar-om-tidevann-og-vannstand/hva-er-stormflo/",
+            "tittel": "Les mer om stormflo"
+         }
+      ],
+      "dialogtekst": "Bygget er plassert i en risikosone for ekstrem vannstand (stormflo)",
+      "muligeTiltak": "- Flytt bygget ut av utsatt område\n- Sikre bygget mot oversvømmelse ved å heve byggegrunnen til flomsikkert nivå, bygge uten kjeller, eller bygge flomvoller eller andre konstruksjoner som holder vannet unna bebyggelsen.\n- Dimensjonere og konstruere byggverket for at det tåler belastning og unngår skade\nDersom du har behov for hjelp, kan du engasjere et rådgivende ingeniørfirma med byggeteknisk og flomfaglig kompetanse",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Stormflo og havnivå",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/fbb95c67-623f-430a-9fa5-9cfcea8366b3",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Stormflo/20180601",
+         "typeReferanse": {
+            "objekttype": "StormfloNå_Intervall200År",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/7/7-2/",
+            "tittel": "TEK-17"
+         },
+         "annenLov": null,
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturfare-stormflo-200-års",
+      "id": "219f938f-e551-476d-bac0-74ac56779976",
+      "tittel": "Stormflo 200-års nivå med havnivåstigning",
+      "forklarendeTekst": "Stormflo oppstår når påvirkning fra været gjør havets vannstand ekstra høy. Lavt luftttrykk fører til høy vannstand og vind kan i tillegg presse vann inn mot land. En ekstrem høy vannstand får vi når en stormflo faller sammen med høyt tidevann. Vær oppmerksom på at effekten av eventuelle overflatebølger vil komme i tillegg. Et 20-års returnivå er basert på en statistisk beregning på historiske data og betyr at nivået blir oversvømt i gjennomsnitt en gang hvert 20. år.\n\n\nDet globale havnivået stiger i hovedsak på grunn av økte havtemperaturer og smelting av isbreer. Samtidig som det globale havnivået stiger, reduserer landheving virkningen av økt havnivå langs Norskekysten. Havnivåstigningen som ligger til grunn her er det beregnet for perioden 2081-2100, for et høyt utslippsscenario (RCP8.5) og inkluderer effekten av landheving.",
+      "lenker": [
+         {
+            "href": "https://kartverket.no/til-sjos/se-havniva/referanseniva/vannstandsniva/",
+            "tittel": "Les mer om vannstandsnivå"
+         },
+         {
+            "href": "https://www.kartverket.no/til-sjos/se-havniva/lar-om-tidevann-og-vannstand/hva-er-stormflo/",
+            "tittel": "Les mer om stormflo"
+         },
+         {
+            "href": "https://www.kartverket.no/til-sjos/se-havniva/havniva/framtidig-havniva-langs-norskekysten/",
+            "tittel": "Les mer om havnivåstigning"
+         }
+      ],
+      "dialogtekst": "Bygget er plassert i en risikosone for ekstrem vannstand (stormflo) med havnivåstigning.",
+      "muligeTiltak": "- Flytt bygget ut av utsatt område\n- Sikre bygget mot oversvømmelse ved å heve byggegrunnen til flomsikkert nivå, bygge uten kjeller, eller bygge flomvoller eller andre konstruksjoner som holder vannet unna bebyggelsen.\n- Dimensjonere og konstruere byggverket for at det tåler belastning og unngår skade\nDersom du har behov for hjelp, kan du engasjere et rådgivende ingeniørfirma med byggeteknisk og flomfaglig kompetanse",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Stormflo og havnivå",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/fbb95c67-623f-430a-9fa5-9cfcea8366b3",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Stormflo/20180601",
+         "typeReferanse": {
+            "objekttype": "Stormflo2090_Intervall200År",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/7/7-2/",
+            "tittel": "TEK-17"
+         },
+         "annenLov": null,
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturfare-stormflo-20-års",
+      "id": "0c5dc043-e5b3-4349-8587-9b464d013d6b",
+      "tittel": "Stormflo 20-års nivå",
+      "forklarendeTekst": "Stormflo oppstår når påvirkning fra været gjør havets vannstand ekstra høy. Lavt luftttrykk fører til høy vannstand og vind kan i tillegg presse vann inn mot land. En ekstrem høy vannstand får vi når en stormflo faller sammen med høyt tidevann. Vær oppmerksom på at effekten av eventuelle overflatebølger vil komme i tillegg. Et 20-års returnivå er basert på en statistisk beregning på historiske data og betyr at nivået blir oversvømt i gjennomsnitt en gang hvert 20. år.",
+      "lenker": [
+         {
+            "href": "https://kartverket.no/til-sjos/se-havniva/referanseniva/vannstandsniva/",
+            "tittel": "Les mer om vannstandsnivå"
+         },
+         {
+            "href": "https://www.kartverket.no/til-sjos/se-havniva/lar-om-tidevann-og-vannstand/hva-er-stormflo/",
+            "tittel": "Les mer om stormflo"
+         }
+      ],
+      "dialogtekst": "Bygget er plassert i en risikosone for ekstrem vannstand (stormflo)",
+      "muligeTiltak": "- Flytt bygget ut av utsatt område\n- Sikre bygget mot oversvømmelse ved å heve byggegrunnen til flomsikkert nivå, bygge uten kjeller, eller bygge flomvoller eller andre konstruksjoner som holder vannet unna bebyggelsen.\n- Dimensjonere og konstruere byggverket for at det tåler belastning og unngår skade\nDersom du har behov for hjelp, kan du engasjere et rådgivende ingeniørfirma med byggeteknisk og flomfaglig kompetanse",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Stormflo og havnivå",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/fbb95c67-623f-430a-9fa5-9cfcea8366b3",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/Stormflo/20180601",
+         "typeReferanse": {
+            "objekttype": "StormfloNå_Intervall20År",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/7/7-2/",
+            "tittel": "TEK-17"
+         },
+         "annenLov": null,
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Går på lag/objekttyper i datasettet og ikke kodeverdi",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "5f93f5a9-84f8-4529-b5ae-5a02597d914b",
+      "tittel": "Hule eiker",
+      "forklarendeTekst": "Eiketrær kan bli flere hundre år gamle og et stort mangfold av arter lever i hulrom, dype barkesprekker og på døde grener i slike trær. Så mange som 1500 arter kan leve på og i hule eiker. Hul eik er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/naturomrader-pa-land/skog/hule-eiker/",
+            "tittel": "Les mer om hul eik"
+         }
+      ],
+      "dialogtekst": "Tiltaket er plassert nærmere enn 15m fra stammen til en hul eik som er utvalgt naturtype.",
+      "muligeTiltak": "Tiltaket kan plasseres 15m eller lengre fra stammen.\nDersom tiltaket må plasseres nærmere enn 15m fra stammen, skal kommunen vurdere tiltaket i henhold til bestemmelsene i naturmangfoldloven. Rotsystemet på treet må ikke skades. En arborist kan vurdere det for deg. Gi en begrunnelse for behovet og legg ved en eventuell uttalelse fra arborist.",
+      "veiledning": "En arborist er en utdannet yrkesutøver innenfor trekonservering, tre-vedlikehold og planting. Arborister er kompetente når det kommer til trær og deres behov, og de er utdannet og utrustet for å gjennomføre de behandlingene som trengs. (Kilde: http://www.trefelling.nu/arborist/). Du kan finne arborister via Gule sider eller andre katalogtjenester.",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 15,
+         "bufferText": "Tiltaket er plassert like ved en hul eik som er utvalgt naturtype. Dette kan påvirke den hule eika negativt.",
+         "bufferMuligeTiltak": "Unngå rigg og annen aktivitet tett opp til den hule eika.\nAvgrens tilgang til den hule eika ved hjelp av byggegjerde.\nDersom tiltaket ikke kan gjennomføres uten at den hule eika påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Hule eiker"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "41c0fc6a-b938-4877-9a62-183ecba6cd48",
+      "tittel": "Slåttemark",
+      "forklarendeTekst": "Slåttemarker er ugjødsla enger som tradisjonelt ble slått for å skaffe vinterfôr til husdyrene. Svært mange arter har slåttemarker som leveområde. I dag har både slåttemarkene og mange av artene som lever der blitt sjeldne. Slåttemark er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten av utvalgt naturtype ved å unngå eller minimere eventuelle inngrep i slåttemarka.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/naturomrader-pa-land/kulturlandskap/slattemark/",
+            "tittel": "Les mer om slåttemark"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en slåttemark som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom slåttemarka.\nPlasser tiltaket i ytterkanten av slåttemarka.\nGjør tiltaket så lite arealkrevende som mulig.\nDersom tiltaket helt eller delvis må plasseres inn på slåttemarka, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 25,
+         "bufferText": "Tiltaket er plassert like ved en slåttemark som er utvalgt naturtype. Dette kan påvirke slåttemarka negativt.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nUnngå at tunge kjøretøyer o.l. må inn på slåttemarka i byggeperioden.\nDersom tiltaket ikke kan gjennomføres uten at slåttemarka påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Slåttemark"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "f6e743f8-1081-469c-829c-f13201ec943c",
+      "tittel": "Slåttemyr",
+      "forklarendeTekst": "Slåttemyr er myr med vegetasjon som er betinget av tradisjonell slått og som fortsatt bærer preg av dette. Svært mange arter har slåttemyrer som leveområde. I dag er både slåttemyrene og mange av artene som lever der blitt sjeldne. Slåttemyr er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten av utvalgt naturtype ved å unngå eller minimere eventuelle inngrep i slåttemyra.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/naturomrader-pa-land/kulturlandskap/slattemyr/",
+            "tittel": "Les mer om slåttemyr"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en slåttemyr som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom slåttemyra.\nPlasser tiltaket i ytterkanten av slåttemyra.\nGjør tiltaket så lite arealkrevende som mulig.\nDersom tiltaket helt eller delvis må plasseres inn på slåttemyra, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 25,
+         "bufferText": "Tiltaket er plassert like ved en slåttemyr som er utvalgt naturtype. Det kan påvirke slåttemyra negativt og kan føre til avslag på byggesøknaden din.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nPass på at tiltaket ikke påvirker vanntilførsel og avrenning fra slåttemyra.\nUnngå at tunge kjøretøyer o.l. må inn på slåttemyra i byggeperioden.\nDersom tiltaket ikke kan gjennomføres uten at slåttemyra påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Slåttemark"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "a2e49e65-2f5e-4188-b848-94cbc32315ff",
+      "tittel": "Kalklindeskog",
+      "forklarendeTekst": "Kalklindeskog er en skogstype som vokser på kalkrik mark. Skogtypen finnes nesten bare i Norge. Svært mange trua arter lever i kalklindeskog, og naturtypen er i tilbakegang. Kalklindeskog er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten av utvalgt naturtype ved å unngå eller minimere eventuelle inngrep i kalklindeskogen.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/naturomrader-pa-land/skog/kalklindeskog/",
+            "tittel": "Les mer om kalklindeskog"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en kalklindeskog som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom kalklindskogen.\nPlasser tiltaket i ytterkanten av kalklindeskogen.\nGjør tiltaket så lite arealkrevende som mulig.\nDersom tiltaket helt eller delvis må plasseres inn i kalklindeskogen, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 25,
+         "bufferText": "Tiltaket er plassert like ved en kalklindeskog som er utvalgt naturtype. Dette kan påvirke kalklindeskogen negativt.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nUnngå at felling av trær og bruk av tunge kjøretøyer i kalklindeskogen i byggeperioden.\nIkke plasser tiltaket slik at det skapes et senere behov for å felle trær i kalklindeskogen.\nDersom tiltaket ikke kan gjennomføres uten at kalklindeskogen påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Kalklindeskog"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "0f18bebe-9fe3-44dd-b6d1-b34e932ff438",
+      "tittel": "Kalksjøer",
+      "forklarendeTekst": "Kalksjøer er innsjøer, tjern og dammer som er naturlig påvirket av kalk. De er unike levesteder for flere sjeldne kalkkrevende arter, særlig kransalger. Kalksjøer er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten av utvalgt naturtype ved å unngå eller minimere eventuelle inngrep i kalksjøen eller i bekker som drenerer til sjøen.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/ferskvann/kalksjoer/",
+            "tittel": "Les mer om kalksjøer"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en kalksjø som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom kalksjøen, og  unngå påvirkning av tilførselsbekker.\nUnngå også myr eller vegetasjonsbelter som hører til sjøen.\nDersom tiltaket helt eller delvis må plasseres inn på kalksjøen, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 50,
+         "bufferText": "Tiltaket er plassert like ved en kalksjø som er utvalgt naturtype. Det kan påvirke kalksjøen negativt og kan føre til avslag på byggesøknaden din.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nPass på at tiltaket ikke påvirker vanntilførsel av avrenning fra kalksjøen.\nUnngå myr eller vegetasjonsbelter som hører til sjøen.\nDersom tiltaket ikke kan gjennomføres uten at kalksjøen påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Kalksjøer"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "ee52d09e-341b-493d-942b-09e5a218fdca",
+      "tittel": "Kystlynghei",
+      "forklarendeTekst": "Kystlyngheier er flere tusen år gamle kulturmarkstyper som er formet av beiting, brenning og slått. Svært mange arter har kystlynghei som leveområde. Utbredelsen av kystlynghei er sterkt redusert. Kystlynghei er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten av utvalgt naturtype ved å unngå eller minimere eventuelle inngrep i kystlyngheia.",
+      "lenker": [
+         {
+            "href": "https://miljostatus.miljodirektoratet.no/tema/naturomrader-pa-land/kulturlandskap/kystlynghei/",
+            "tittel": "Les mer om kystlynghei"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en kystlynghei som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom kystlyngheia.\nPlasser tiltaket i ytterkanten av kystlyngheia.\nGjør tiltaket så lite arealkrevende som mulig.\nDersom tiltaket helt eller delvis må plasseres inn på kystlyngheia, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 25,
+         "bufferText": "Tiltaket er plassert like ved en kystlynghei som er utvalgt naturtype. Dette kan påvirke kystlyngheia negativt.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nUnngå at tunge kjøretøyer o.l. må inn på kystlyngheia i byggeperioden.\nDersom tiltaket ikke kan gjennomføres uten at kystlyngheia påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Kystlynghei"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-naturtyper-utvalgte",
+      "id": "39592497-57fc-418b-b3f1-8947aa8453b7",
+      "tittel": "Åpen grunnlendt kalkmark i boreonemoral sone",
+      "forklarendeTekst": "Åpen grunnlendt kalkrik mark i boreonemoral sone er en svært artsrik naturtype som oftest finnes som små arealer i overganger mellom nakent berg og skogsmark. Naturtypen og mange av artene som lever der, er trua. Naturtypen har en sørøstlig utbredelse i Norge, med tyngdepunkt i kalkområdene i Oslofjorden. TIl sammen har vi bare 1-2 km2. Åpen grunnlendt kalkmark i boreonemoral sone er en utvalgt naturtype som skal tas hensyn til og vurderes i byggesøknaden. Vis hensyn til forekomsten ved å unngå eller minimere eventuelle inngrep.",
+      "lenker": [
+         {
+            "href": "https://artsdatabanken.no/RLN2018/266/aapen_grunnlendt_kalkrik_mark_i_boreonemoral_sone",
+            "tittel": "Rødlistevurdering 2018 (Artsdatabanken)"
+         }
+      ],
+      "dialogtekst": "Tiltaket kommer i overlapp med en åpen grunnlendt kalkmark som er utvalgt naturtype. Det kan føre til avslag på byggesøknaden din.",
+      "muligeTiltak": "Plasser tiltaket utenom kalkmarka.\nPlasser tiltaket i ytterkanten av kalkmarka.\nGjør tiltaket så lite arealkrevende som mulig.\nDersom tiltaket helt eller delvis må plasseres inn på kalkmarka, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Naturtyper - utvalgte",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/2c0072de-f702-401e-bfb3-5ad3d08d4c2d",
+         "bufferAvstand": 25,
+         "bufferText": "Tiltaket er plassert like ved en åpen grunnlendt kalkmark som er utvalgt naturtype. Dette kan påvirke kalkmarka negativt.",
+         "bufferMuligeTiltak": "Gjør tiltaket så lite arealkrevende som mulig.\nUnngå at tunge kjøretøyer o.l. må inn på kalkmarka i byggeperioden.\nDersom tiltaket ikke kan gjennomføres uten at kalkmarka påvirkes, skal kommunen vurdere tiltaket i henhold til naturmangfoldloven. Gi en begrunnelse for behovet.",
+         "gmlSkjema": null,
+         "navnerom": "https://data.geonorge.no/sosi/natur",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": "utvalgtNaturtype",
+            "kodeverdi": "Åpen grunnlendt kalkmark i boreonemoral sone"
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2011-05-13-512",
+            "tittel": "Forskrift om utvalgte naturtyper etter naturmangfoldloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "Gjeldende versjon av datasettet Naturtyper - Utvalgte ble satt i drift 19.10.2021. Produktspesifikasjon er under arbeid.",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-radon-aktsomhet",
+      "id": "a39a8a5d-3fd3-4d0e-a634-bd70dae880ca",
+      "tittel": "Radon aktsomhet",
+      "forklarendeTekst": "Datasettet/kartet «Radon aktsomhet» gir en første vurdering av aktsomhet for radon, og kan brukes som et hjelpemiddel for å vurdere behovet for nye målinger i boliger og ved planlegging av nybygging av boliger. Har et område fått klassifiseringen «høy aktsomhet» eller «særlig høy aktsomhet» bør det tas hensyn til dette. Kartet viser sannsynlighet for at det kan være eller vil bli et radonproblem.",
+      "lenker": [
+         {
+            "href": "https://www.ngu.no/emne/radonfare",
+            "tittel": "Les mer om radonfare"
+         },
+         {
+            "href": "https://geo.ngu.no/kart/radon_mobil/",
+            "tittel": "Karttjenesten Radon aktsomhet"
+         }
+      ],
+      "dialogtekst": "Det nasjonale aktsomhetskartet for radon gir kommunene et grunnlag for en første vurdering av radonfare. I områder med høy eller særlig høy aktsomhet bør kommunen undersøke om det er behov for å følge opp radonproblematikken i henhold til Plan og bygningsloven og Folkehelseloven med forskrifter. Kartet kan ikke benyttes til å forutsi radonkonsentrasjonen i enkeltbygninger. Den eneste måten å få sikker kunnskap om radon i en bygning, er å gjennomføre en måling.",
+      "muligeTiltak": "Ref krav i Byggteknisk forskrift (TEK17)",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Radon aktsomhet",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/dc0605f3-2301-4abe-a91f-6da42464c281",
+         "bufferAvstand": null,
+         "bufferText": null,
+         "bufferMuligeTiltak": null,
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/RadonAktsomhet/1.1",
+         "typeReferanse": {
+            "objekttype": "RadonAktsomhet",
+            "attributt": "aktsomhetGrad",
+            "kodeverdi": ""
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": {
+            "href": "https://dibk.no/regelverk/byggteknisk-forskrift-tek17",
+            "tittel": "Byggteknisk forskrift TEK17"
+         },
+         "annenLov": null,
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-vannforsyningssystemer",
+      "id": "ea9ba9b3-5f0d-4bf8-b4d1-0d8c276f3e1a",
+      "tittel": "Små vannverk",
+      "forklarendeTekst": "Små vannverk leverer drikkevann til inntil ca. 50 personer, både til boliger og fritidseiendommer. I Norge har vi flere tusen små vannerk, gjerne i lite bebygde strøk. Vannverkseieren er ansvarlig for å levere trygt, nok drikkevann, mens det er forbudt for alle å forurense drikkevannet. De som skal gjøre inngrep i områder med små vannverk, må sørge for at det ikke utgjør en risiko for drikkevannet.",
+      "lenker": [
+         {
+            "href": "https://lovdata.no/dokument/SF/forskrift/2016-12-22-1868?q=drikkevannsforskriften",
+            "tittel": "Drikkevannsforskriften"
+         },
+         {
+            "href": "https://www.mattilsynet.no/mat_og_vann/drikkevann/registreringogplangodkjenning/",
+            "tittel": "Mattilsynet: drikkevannshensyn"
+         }
+      ],
+      "dialogtekst": "Inngrepet er planlagt i nærheten av ett eller flere vannverk. Det kan få innvirkning på søknadsbehandlingen.",
+      "muligeTiltak": "Tilpass om mulig inngrepet for å unngå områder der drikkevann kan være utsatt. Gjør tiltak for å minimere forurensning fra anleggsmaskiner og annen aktivitet under og etter inngrepet. \nOm nødvendig kan dere etablere en annen drikkevannskilde, enten permanent, eller midlertidig mens inngrepet pågår. Det går også an å sørge for midlertidig leveranse av annet drikkevann. Det må skje i samråd med vannverkseier. \nDet er uansett en fordel å kontakte vannverkseieren, både for å informere, og avklare forhold rundt inngrepet, og leveranse av trygt og nok drikkevann. ",
+      "veiledning": "",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "Små vannverk",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/8adefb0a-d020-4adb-858f-a27d03dd4184",
+         "bufferAvstand": 300,
+         "bufferText": "Inngrepet er planlagt i nærheten av ett eller flere vannverk, og kan påvirke leveransen av drikkevann.",
+         "bufferMuligeTiltak": "Planlegg inngrepet slik at drikkevannet blir påvirket så lite som mulig. Gjør vannverkseieren kjent med inngrepet. Vurder tiltak som minimerer risikoen for forurensning under og etter inngrepet. Husk også å vurdere tiltak ved bygging av infrastruktur (vei ol.) som er nødvendig for å gjennomføre inngrepet.",
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/SmaVannverk/20210701",
+         "typeReferanse": {
+            "objekttype": "Vannverk",
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/forskrift/2016-12-22-1868/§4",
+            "tittel": "Drikkevannsforskriften § 4"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   },
+   {
+      "kontekstType": "Byggesak-treff-vassdrag",
+      "id": "1e5a3686-450d-4a3b-a479-e14f638e20bf",
+      "tittel": "Nærhet til vassdrag",
+      "forklarendeTekst": "Det enkelte tiltaket må ta hensyn til allmenne interesser i vassdrag og grunnvann, jf. vannressursloven (vrl).\n\nVannressursloven har som formål å sikre en samfunnsmessig forsvarlig bruk og forvaltning av vassdrag og grunnvann. Det foreligger en generell aktsomhetsplikt for tiltak i vassdrag, som innebærer at enhver skal opptre aktsomt slik at skade eller ulempe i vassdraget for allmenne eller private interesser unngås.  \n\nSom vassdrag regnes alt stillestående eller rennende overflatevann med årssikker vannføring, med tilhørende bunn og bredder inntil høyeste vanlige flomvannstand. Selv om et vassdrag på enkelte strekninger renner under jorden eller under isbreer, regnes det i sin helhet som vassdrag. Som vassdrag regnes også vannløp uten årssikker vannføring dersom det atskiller seg tydelig fra omgivelsene (vannressursloven §2).\n\nDet foreligger en generell aktsomhetsplikt for tiltak i vassdrag (vrl§ 5), som innebærer at enhver skal opptre aktsomt slik at skade eller ulempe i vassdraget for allmenne eller private interesser unngås. Begrepet «allmenne interesser» omfatter et bredt spekter av interesser av samfunnsmessig betydning, herunder biologisk mangfold, fiske, flom- og erosjonsfare, kulturverdier, landskap og friluftsliv i tilknytning til vassdrag og grunnvann. \n\nDersom et tiltak legger til rette for vassdragstiltak som kan være til nevneverdig skade eller ulempe for noen allmenne interesser i vassdraget, vil NVE vurdere tiltaket opp mot bestemmelsene i vannressursloven (konsesjonspliktsvurdering).\n\n\n",
+      "lenker": [
+         {
+            "href": "https://publikasjoner.nve.no/veileder/2021/veileder2021_01.pdf",
+            "tittel": "NVEs veileder 1/2021 Veileder til vannressursloven og NVEs behandling av vassdrags- og grunnvannstiltak."
+         }
+      ],
+      "dialogtekst": "Tiltaket ligger nært et vassdrag. Det må tas hensyn til vassdraget. Unngå inngrep i vassdraget. Unngå bekkelukkinger. Unngå inngrep i kantvegetasjon",
+      "muligeTiltak": "Flytte tiltaket lengre vekk fra vassdraget.\nUnngå inngrep i vassdraget. \nUnngå bekkelukkinger. \nUnngå inngrep i kantvegetasjonen.\nUnngå økt tilførsel av vann til vassdrag, som følge av økt overvannsavrenning som kan medføre skader og ulemper i form av økte flomproblemer og oversvømmelse nedstrøms.\n",
+      "veiledning": "Tiltaket ligger nært et vassdrag. Det må tas hensyn til vassdraget.",
+      "status": "Ferdig",
+      "datasett": {
+         "tittel": "FKB-Vann",
+         "urlMetadata": "https://kartkatalog.geonorge.no/metadata/uuid/595e47d9-d201-479c-a77d-cbc1f573a76b",
+         "bufferAvstand": 20,
+         "bufferText": null,
+         "bufferMuligeTiltak": "Flytte tiltaket lengre vekk fra vassdraget.\nUnngå inngrep i vassdraget. \nUnngå bekkelukkinger. \nUnngå inngrep i kantvegetasjonen.\nUnngå økt tilførsel av vann til vassdrag, som følge av økt overvannsavrenning som kan medføre skader og ulemper i form av økte flomproblemer og oversvømmelse nedstrøms.",
+         "gmlSkjema": null,
+         "navnerom": "http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61",
+         "typeReferanse": {
+            "objekttype": null,
+            "attributt": null,
+            "kodeverdi": null
+         }
+      },
+      "referanse": {
+         "tittel": "Mangler",
+         "tek17": null,
+         "annenLov": {
+            "href": "https://lovdata.no/dokument/NL/lov/2000-11-24-82",
+            "tittel": "Vannressursloven"
+         },
+         "rundskrivFraDep": null
+      },
+      "tekniskKommentar": "",
+      "annenKommentar": "",
+      "tegn1": "",
+      "tegn2": "",
+      "tegn3": "",
+      "tegn4": "",
+      "tegn5": "",
+      "tegn6": ""
+   }
+]

@@ -1,0 +1,31 @@
+.popup {
+   font-size: 14px;
+   font-family: "Roboto-Regular";
+   //width: 400px;
+
+   h3 {
+      font-size: 16px;
+      margin: 0 0 12px 0;
+   }
+
+   .location {
+      font-weight: 500;
+      font-family: "Roboto-Medium";
+      margin-bottom: 12px;
+   }
+
+   .description,
+   .posibleActions {
+      white-space: pre-line;
+      margin-bottom: 12px;
+   }
+
+   .links {
+      padding: 0;
+      list-style-position: inside;
+
+      a:focus-visible {
+         outline: none !important
+      }
+   }
+}

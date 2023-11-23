@@ -1,15 +1,16 @@
-.container {
+.app {
    margin: 40px auto;
    width: 1600px;
+   display: flex;
+
+   .sidePanel {
+      flex: 0 0 360px;
+      background-color: #fff;
+   }
+
+   .mapView {
+      flex: 1;
+   }
 }
 
-.map {
-   width: 100%;
-   height: 800px;
-}  
 
-.mapboxgl-popup {
-max-width: 400px;
-font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-color: green;
-}

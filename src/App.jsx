@@ -1,31 +1,23 @@
-import { useEffect, useRef, useState } from 'react'
-import { createMap } from 'utils/map/map';
+import MapProvider from 'context/MapProvider';
+import MapView from 'features/MapView';
 import styles from './App.module.scss'
 
 function App() {
-   const initRef = useRef(true);
-   const mapElementRef = useRef(null);
-   const [map, setMap] = useState(null);
-
-   useEffect(
-      () => {
-         if (initRef.current) {
-            initRef.current = false;
-            setMap(createMap(mapElementRef.current));
-         }
-      },
-      []
-   );
-
-   function test() {
-      const layer = map.getLayer('custom-threebox-model');
-      tb.world.children[0].setCoords([6.003962, 60.246443])
-   }
+   const location = [6.004476482266369, 60.24443606674362];
+   const altitude = 15;
+   const building = 'moderne-hus';
 
    return (
-      <div className={styles.container}>
-         {/* <button onClick={test}>Test</button> */}
-         <div ref={mapElementRef} className={styles.map}></div>
+      <div className={styles.app}>
+         <MapProvider location={location} altitude={altitude} building={building}>
+            <div className={styles.sidePanel}>
+               <h3>Sidepanel</h3>
+            </div>
+
+            <div className={styles.mapView}>
+               <MapView />
+            </div>
+         </MapProvider>
       </div>
    );
 }

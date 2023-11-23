@@ -1,0 +1,42 @@
+@import './reset';
+@import './fonts';
+@import 'mapbox-gl/dist/mapbox-gl.css';
+@import './overrides';
+
+html {
+   font-family: 'Roboto-Regular';
+   font-size: 14px;
+}
+
+body {   
+   margin: 0;
+   overflow-y: scroll;
+}
+
+h1 {
+   font-family: 'Roboto-Medium';
+   font-weight: 500;
+   margin: 0 0 18px 0;
+}
+
+h2 {
+   font-family: 'Roboto-Medium';
+   font-weight: 500;
+   margin: 0 0 12px 0;
+}
+
+h3 {
+   font-family: 'Roboto-Medium';
+   font-weight: 500;
+   margin: 0 0 6px 0;
+}
+
+a {
+   color: #0072E5;
+   text-decoration: underline;
+   text-decoration-color: rgba(0, 127, 255, 0.4);
+
+   &:hover {
+      text-decoration-color: #0072E5;
+   }
+}
