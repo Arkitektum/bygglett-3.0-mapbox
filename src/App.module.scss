@@ -1,10 +1,12 @@
+
 .app {
-   margin: 40px auto;
+   margin: 0 auto;
    width: 1600px;
    display: flex;
+   flex-direction: column;
 
    .sidePanel {
-      flex: 0 0 312px;
+      flex: 0 0 200px;
       background-color: #fff;
    }
 
@@ -12,5 +14,28 @@
       flex: 1;
    }
 }
+.container {
+   display: flex;
+   flex-direction: row;
+}
+.banner {
+   display: block;
+   padding: 30px;
+   background-color: #ebf4fa;
 
+   > div {
+      display: flex;
+      width: 1600px;
+      margin: auto;
+   }
 
+}
+.textbox {
+   font-family: 'Roboto-regular';
+   width: 1556px;
+   border: 2px solid #003045;
+   border-radius: 4px;
+   padding: 20px;
+   margin: auto;
+   margin-top: 20px;
+}
