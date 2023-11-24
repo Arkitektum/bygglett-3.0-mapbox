@@ -1,127 +1,202 @@
 @import '../../styles/variables.scss';
-.content { 
-    font-size: 1.2rem;   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .btn {
-        background-color: transparent;        
-        border: none;
-        display: inline-block;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        border-radius: 4px;
-        display: flex;
-        > div {
-            width: 50px;
-            height: 50px;
-        }
-        
-        svg {
-            width: 50px;
-            height: 50px;
-            
-            fill: $primary-dark-blue;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-        }
-        
-        #up {
-            background-color: green;
-        }
-    }
-    label {
-        &.hidden {
-            visibility: hidden;
-            position: absolute;
-            width: 0;
-        }        
-    }
-    .btn:hover {
-        cursor: pointer;        
-        box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
-        svg {
-            fill: $primary-light-blue;
-        }
-    }
-    .widthLabel {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .directions {
-        display: block;
-        position: relative;
-        width: 150px;
-        height: 150px;
-        text-align: center;        
-        
-        //right
-        :nth-child(1) {
-            button {
+
+
+.content {
+   font-size: 1.2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+
+   .btn {
+      background-color: transparent;
+      border: none;
+      display: inline-block;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      border-radius: 4px;
+      display: flex;
+
+      >div {
+         width: 50px;
+         height: 50px;
+      }
+
+      svg {
+         width: 50px;
+         height: 50px;
+
+         fill: $primary-dark-blue;
+         -webkit-transition-duration: 0.4s;
+         /* Safari */
+         transition-duration: 0.4s;
+      }
+
+      #up {
+         background-color: green;
+      }
+   }
+
+   label {
+      &.hidden {
+         visibility: hidden;
+         position: absolute;
+         width: 0;
+      }
+   }
+
+   .btn:hover {
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      svg {
+         fill: $primary-light-blue;
+      }
+   }
+
+   .widthLabel {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+
+   .directions {
+      display: block;
+      position: relative;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+
+      //right
+      :nth-child(1) {
+         button {
             position: absolute;
             top: 42px;
             left: 93px;
-            }
-            
-        }
-        //up
-        :nth-child(2) {
-            button {
-                position: absolute;
-                top: 85px;
-                left: 50px;
-                }
-        }
-        //left
-        :nth-child(3) {
-            button {
-                position: absolute;
-                top: 42px;
-                left: 10px;
-                }
-        }
-        // down
-        :nth-child(4) {
-            button {
-                position: absolute;
-                top: 0;
-                left: 50px
-                }
-        }
-        :nth-child(5) {
+         }
+
+      }
+
+      //up
+      :nth-child(2) {
+         button {
             position: absolute;
-            top: 55px;
-            left: 65px;
-            
-        }
-        
-    }
-    .rotateOnce {
-        transform: rotate(90deg);
-    }
-    .rotateTwice {
-        transform: rotate(180deg);
-    }
-    .rotateThird {
-        transform: rotate(270deg);
-    }
-    .rotateIcon {
-        width: 30px;
-    }
-    .rotations {
-        
-        width: 100%;
-        justify-content: space-evenly;
-        display: flex;
-        align-items: center;
-    }
-    .elevations { 
-        margin-top: 15px;       
-        width: 100%;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            top: 85px;
+            left: 50px;
+         }
+      }
+
+      //left
+      :nth-child(3) {
+         button {
+            position: absolute;
+            top: 42px;
+            left: 10px;
+         }
+      }
+
+      // down
+      :nth-child(4) {
+         button {
+            position: absolute;
+            top: 0;
+            left: 50px
+         }
+      }
+
+      :nth-child(5) {
+         position: absolute;
+         top: 55px;
+         left: 65px;
+
+      }
+
+   }
+
+   .rotateOnce {
+      transform: rotate(90deg);
+   }
+
+   .rotateTwice {
+      transform: rotate(180deg);
+   }
+
+   .rotateThird {
+      transform: rotate(270deg);
+   }
+
+   .rotateIcon {
+      width: 30px;
+   }
+
+   button {
+      display: flex;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      display: inline-block;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      border-radius: 4px;
+      margin: 0;
+      padding: 0;
+
+      &:hover {
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+         svg {
+            fill: $primary-light-blue;
+         }
+      }
+   }
+
+   .house {
+      background: url(../../assets/gfx/icon-house-3d.svg) no-repeat center;
+      width: 40px;
+      height: 37px;
+      margin: 5px;
+   }
+
+   .rotations {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      button {
+         width: 40px;
+         height: 40px;
+      }
+
+      .left {
+         background: url(../../assets/gfx/icon-rotate.svg) no-repeat center;
+      }
+
+      .right {
+         transform: scaleX(-1);
+         background: url(../../assets/gfx/icon-rotate.svg) no-repeat center;
+      }
+   }
+
+   .elevations {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+         width: 40px;
+         height: 40px;
+      }
+
+      .up {
+         transform: rotate(-90deg);
+         background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;
+      }
+
+      .down {
+         transform: rotate(90deg);
+         background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;
+      }
+   }
 }
