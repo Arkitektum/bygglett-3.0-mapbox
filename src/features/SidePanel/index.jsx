@@ -2,7 +2,6 @@
 import styles from './SidePanel.module.scss'
 import { Reset, TurnLeft, TurnRight, ArrowBtn } from '../../assets/reset.jsx'
 
-
 function SidePanel() {
    return (
       <div className={styles.content}>
