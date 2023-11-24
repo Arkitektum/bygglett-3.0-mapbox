@@ -6,6 +6,9 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   > div {
+    margin: 20px 0;
+   }
 
 
 
@@ -18,15 +21,24 @@
       transition-duration: 0.4s;
       border-radius: 4px;
       display: flex;
+      align-items: center;
+      &:hover {
+        filter: invert(28%);
+     }   
 
-      >div {
-         width: 50px;
-         height: 50px;
+      > div {
+         width: 40px;
+         height: 40px;
+      }
+      .reset {
+        background: url(../../assets/gfx/icon-reset.svg) no-repeat center;
+        width: 40px;
+        height: 37px;
       }
 
       svg {
-         width: 50px;
-         height: 50px;
+         width: 40px;
+         height: 40px;
 
          fill: $primary-dark-blue;
          -webkit-transition-duration: 0.4s;
@@ -49,10 +61,10 @@
 
    .btn:hover {
       cursor: pointer;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
 
       svg {
-         fill: $primary-light-blue;
+         fill: $primary-light-blue;         
       }
    }
 
@@ -68,6 +80,12 @@
       width: 150px;
       height: 150px;
       text-align: center;
+
+      .arrow {
+        background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;
+        width: 40px;
+        height: 37px;
+      }
 
       //right
       :nth-child(1) {
@@ -105,13 +123,20 @@
             left: 50px
          }
       }
-
+    //house in the middle
       :nth-child(5) {
          position: absolute;
-         top: 55px;
-         left: 65px;
+         top: 40px;
+         left: 48px;
 
       }
+      :nth-child(6) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+     }
 
    }
 
@@ -163,14 +188,24 @@
       display: flex;
       justify-content: center;
       margin-bottom: 15px;
+      flex-wrap: wrap;
+    
+      :last-child {
+        width: 100%;
+        text-align: center;
+      }
 
       button {
          width: 40px;
-         height: 40px;
+         height: 40px;  
+         &:hover {
+            filter: invert(28%);
+         }                  
       }
 
       .left {
          background: url(../../assets/gfx/icon-rotate.svg) no-repeat center;
+         
       }
 
       .right {
@@ -186,17 +221,38 @@
 
       button {
          width: 40px;
-         height: 40px;
+         height: 40px;         
       }
 
       .up {
          transform: rotate(-90deg);
-         background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;
+         background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;        
+         
       }
 
       .down {
          transform: rotate(90deg);
          background: url(../../assets/gfx/icon-arrow.svg) no-repeat center;
       }
+   }
+   .spm {
+    font-size: 1rem;
+
+    .spmIcon {
+        width: 40px;
+         height: 40px;  
+        background: url(../../assets/gfx/icon-spm.svg) no-repeat center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .textbox {
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+        border-radius: 4px;
+
+    }
    }
 }
