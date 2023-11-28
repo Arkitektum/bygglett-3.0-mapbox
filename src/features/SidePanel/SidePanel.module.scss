@@ -2,7 +2,7 @@
 
 
 .content {
-   font-size: 1.2rem;
+   font-size: 1rem;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -255,4 +255,36 @@
 
     }
    }
+}
+.showInfo {
+    font-size: .9rem;
+    display: block;  
+    position: relative;    
+    overflow: hidden;
+    background-color: white;
+    left: 200px;
+    z-index: 1;
+    width: 200px;
+    bottom: 85px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid $primary-light-blue;
+    animation: fadein .3s ease-in-out forwards;   
+    box-shadow: $box-shadow;
+}
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+      background-color: $bg;
+    }
+  }
+.hideInfo {
+    display: block;
+    height: 0;
+    position: fixed;
+    overflow: hidden;
+    
 }

@@ -9,7 +9,7 @@ export function createBuilding(map, location, altitude, building) {
       type: 'custom',
       renderingMode: '3d',
       onAdd: () => {
-         const scale = 1;
+         const scale = .5;
 
          const options = {
             obj: `/${building}.glb`,
