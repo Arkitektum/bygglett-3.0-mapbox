@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@turf/boolean-intersects": "^6.5.0",
+    "@turf/buffer": "^6.5.0",
     "@turf/helpers": "^6.5.0",
     "@turf/transform-rotate": "^6.5.0",
     "@types/jsts": "^0.17.22",
