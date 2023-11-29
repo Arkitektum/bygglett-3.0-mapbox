@@ -1,6 +1,6 @@
 import { Map, NavigationControl } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
-import { createNaturtyperUtvalgteLayer,createUllevålNaturtyperUtvalgteLayer } from './geojson';
+import { createNaturtyperUtvalgteLayer,createUllevålNaturtyperUtvalgteLayer,createullevålEiendomsgrense } from './geojson';
 import { createBuilding } from './building';
 import { createBuildings } from './buildings';
 import { createTerrain } from './terrain';
@@ -34,7 +34,7 @@ export function createMap(container, location, altitude, building) {
 
    map.on('load', () => {
       createNaturtyperUtvalgteLayer(map);
-      createUllevålNaturtyperUtvalgteLayer(map);
+      createullevålEiendomsgrense(map);
       // createWmsLayer(map);
 
       setTimeout(() => {

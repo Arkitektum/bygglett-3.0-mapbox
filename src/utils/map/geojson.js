@@ -1,10 +1,11 @@
 import naturtyperUtvalgte from 'data/naturtyper-utvalgte.json';
 import ullevånaturtyperUtvalgte from 'data/Ullevaal_utvalget_naturtyper.json'
+import ullevålEiendomsgrense from 'data/Ullevaal_Oslo_25832_MatrikkelenEiendomskartTeig_eiendomsgrense.json'
 
 export function createNaturtyperUtvalgteLayer(map) {
    map.addSource('naturtyper-utvalgte', {
       'type': 'geojson',
-      'data': naturtyperUtvalgte
+      'data': ullevånaturtyperUtvalgte
    });
 
    map.addLayer(
@@ -17,7 +18,6 @@ export function createNaturtyperUtvalgteLayer(map) {
             'fill-opacity': 0.4
          },
          'filter': ['all',
-            ['==', '$type', 'Polygon'],
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
       },
@@ -33,7 +33,7 @@ export function createUllevålNaturtyperUtvalgteLayer(map) {
 
    map.addLayer(
       {
-         'id': 'hul-eik',
+         'id': 'ullevål-hul-eik',
          'type': 'fill',
          'source': 'ullevål_naturtyper-utvalgte',
          'paint': {
@@ -41,13 +41,31 @@ export function createUllevålNaturtyperUtvalgteLayer(map) {
             'fill-opacity': 0.4
          },
          'filter': ['all',
-            ['==', '$type', 'Polygon'],
-            ['==', 'utvalgtNaturtype', 'UN03']
+            ['==', 'utvalgtNat', 'UN03']
          ]
       },
       'buildings'
    );
 }
+export function createullevålEiendomsgrense(map) {
+   map.addSource('ullevål_Eiendomsgrense', {
+      'type': 'geojson',
+      'data': ullevålEiendomsgrense
+   });
+
+   map.addLayer(
+      {
+         'id': 'ullevål-Eiendomsgrense',
+         'type': 'line',
+         'source': 'ullevål_Eiendomsgrense',
+         'paint': {
+            'line-color': '#888',
+            'line-width': 8
+         }
+      }
+   );
+};
+
 
 
 
