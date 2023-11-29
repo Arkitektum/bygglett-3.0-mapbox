@@ -59,8 +59,8 @@ export function createullevålEiendomsgrense(map) {
          'type': 'line',
          'source': 'ullevål_Eiendomsgrense',
          'paint': {
-            'line-color': '#888',
-            'line-width': 8
+            'line-color': 'green',
+            'line-width':2
          }
       }
    );
