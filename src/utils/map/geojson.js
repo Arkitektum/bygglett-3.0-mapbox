@@ -1,4 +1,5 @@
 import naturtyperUtvalgte from 'data/naturtyper-utvalgte.json';
+import ullevånaturtyperUtvalgte from 'data/Ullevaal_utvalget_naturtyper.json'
 
 export function createNaturtyperUtvalgteLayer(map) {
    map.addSource('naturtyper-utvalgte', {
@@ -11,6 +12,30 @@ export function createNaturtyperUtvalgteLayer(map) {
          'id': 'hul-eik',
          'type': 'fill',
          'source': 'naturtyper-utvalgte',
+         'paint': {
+            'fill-color': 'red',
+            'fill-opacity': 0.4
+         },
+         'filter': ['all',
+            ['==', '$type', 'Polygon'],
+            ['==', 'utvalgtNaturtype', 'UN03']
+         ]
+      },
+      'buildings'
+   );
+}
+
+export function createUllevålNaturtyperUtvalgteLayer(map) {
+   map.addSource('ullevål_naturtyper-utvalgte', {
+      'type': 'geojson',
+      'data': ullevånaturtyperUtvalgte
+   });
+
+   map.addLayer(
+      {
+         'id': 'hul-eik',
+         'type': 'fill',
+         'source': 'ullevål_naturtyper-utvalgte',
          'paint': {
             'fill-color': 'red',
             'fill-opacity': 0.4
