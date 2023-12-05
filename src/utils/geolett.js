@@ -1,4 +1,5 @@
 import contextTypes from 'data/geolett.json';
+import tree from '../assets/gfx/oak-tree.svg'
 
 export function getContextType(filter) {
    const contextType = contextTypes.find(filter);
@@ -10,7 +11,8 @@ export function getContextType(filter) {
    return {
       title: contextType.tittel,
       description: contextType.forklarendeTekst,
-      possibleActions: contextType.muligeTiltak.split('\n'),
-      links: contextType.lenker?.map(link => ({ title: link.tittel, url: link.href })) || []
+      possibleActions: contextType.muligeTiltak.split('\n'),      
+      links: contextType.lenker?.map(link => ({ title: link.tittel, url: link.href })) || [],
+      icon: {tree}
    };
 }

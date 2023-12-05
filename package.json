@@ -16,6 +16,7 @@
     "@turf/helpers": "^6.5.0",
     "@turf/transform-rotate": "^6.5.0",
     "@types/jsts": "^0.17.22",
+    "dibk-design": "^3.6.1",
     "jsts": "^2.11.0",
     "mapbox-gl": "^2.15.0",
     "react": "^18.2.0",

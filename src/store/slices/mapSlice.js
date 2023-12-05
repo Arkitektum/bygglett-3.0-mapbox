@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-   intersection: null   
+   intersection: null,
+   dialog: null   
 };
 
 export const mapSlice = createSlice({
@@ -13,10 +14,16 @@ export const mapSlice = createSlice({
             ...state,
             intersection: action.payload
          };
+      },
+      toggleDialog: (state, action) => {                       
+         return {
+            ...state,
+            dialog: action.payload            
+         };
       }
    }
 });
 
-export const { setIntersection } = mapSlice.actions;
+export const { setIntersection, toggleDialog } = mapSlice.actions;
 
 export default mapSlice.reducer;

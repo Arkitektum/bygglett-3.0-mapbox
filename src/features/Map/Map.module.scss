@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+
+
+   .sidePanel {
+      flex: 0 0 200px;
+      background-color: #fff;
+   }
+
+   .mapView {
+      flex: 1;
+      position: relative;
+   }
+
+.container {
+   display: flex;
+   flex-direction: row;
+}
+
+
+.textbox {
+   font-family: 'Roboto-regular';
+   width: 1556px;
+   border: 2px solid #003045;
+   border-radius: 4px;
+   padding: 20px;
+   margin: auto;
+   margin-top: 20px;
+}
+.staticDialog {
+   display: flex;
+   width: 200px;
+   overflow: hidden;
+   font-family: 'Roboto-regular';
+   position: absolute;   
+   border: $map-borders;
+   right: -10px;
+   top: 85px; 
+   height: 300px;  
+   z-index: 1;
+   background: white;
+   border-radius: 4px;
+   padding: 8px;
+   margin: 20px;
+}
+.nostaticDialog {
+   display: flex;
+   width: 0;
+   overflow: hidden;
+   font-family: 'Roboto-regular';
+   position: absolute;   
+   border: none;
+   right: -10px;
+   top: 85px; 
+   height: 300px;  
+   z-index: 1;
+   background: white;
+   border-radius: 4px;
+  
+   margin: 20px;
+}

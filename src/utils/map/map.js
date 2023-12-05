@@ -4,7 +4,7 @@ import { createNaturtyperUtvalgteLayer,createUllevålNaturtyperUtvalgteLayer,cre
 import { createBuilding } from './building';
 import { createBuildings } from './buildings';
 import { createTerrain } from './terrain';
-import { createWmsLayer } from './wms';
+//import { createWmsLayer } from './wms';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
@@ -46,6 +46,7 @@ export function createMap(container, location, altitude, building) {
    map.on('style.load', () => {
       createTerrain(map);
       createBuildings(map);
+      //createWmsLayer(map);
       createBuilding(map, location, altitude, building);
    });
 

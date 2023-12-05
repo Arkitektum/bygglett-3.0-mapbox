@@ -10,6 +10,22 @@ export function createNaturtyperUtvalgteLayer(map) {
 
    map.addLayer(
       {
+         'id': 'border',
+         'type': 'line',
+         'source': 'naturtyper-utvalgte',
+         'paint': {
+            'line-color': 'red',
+            'line-width': 4,
+            'line-dasharray': [2, 1]
+         },
+         'filter': ['all',
+            ['==', 'utvalgtNaturtype', 'UN03']
+         ]
+      },     
+      'buildings'
+   );
+   map.addLayer(
+      {
          'id': 'hul-eik',
          'type': 'fill',
          'source': 'naturtyper-utvalgte',
@@ -20,7 +36,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
-      },
+      },     
       'buildings'
    );
 }
@@ -37,9 +53,9 @@ export function createUllevålNaturtyperUtvalgteLayer(map) {
          'type': 'fill',
          'source': 'ullevål_naturtyper-utvalgte',
          'paint': {
-            'fill-color': 'red',
+            'fill-color': 'green',
             'fill-opacity': 0.4
-         },
+         },        
          'filter': ['all',
             ['==', 'utvalgtNat', 'UN03']
          ]
