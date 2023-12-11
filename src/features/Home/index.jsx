@@ -27,41 +27,51 @@ function Home() {
             </React.Fragment>
          </ContentBox>
 
-         <Accordion color="lightCyan"
-            onToggleExpand={function noRefCheck() { }}
-            title="Hul Eik ( Miljødirektoratet )"
-         >
-            <React.Fragment key=".0">
-               <img src={tree} />
-               <p>Synnøve ( 65) tannlege</p>
-               <p>Hun tok over barndomshjemmet på Ullevål for noen år siden. Vedlikehold av huset og stell av den store hagen ble for mye for foreldrene hennes.</p>
-               <p>Synnøves datter har nå stiftet familie, og sammen planlegger de å bygge en ny bolig på den store tomta.</p>
-               <p>Synnøve har ikke behov for så mye plass og vil bo i den nye enheten, mens datteren og familien hennes vil ta over det gamle huset.</p>
-               <p>Vil det være plass til å bygge et lite hus på tomta?</p>
-               <a href="/kart">Sjekk kartet og utforsk mulighetene!</a>
-            </React.Fragment>
-         </Accordion>
-         <Accordion color="lightCyan"
-            onToggleExpand={function noRefCheck() { }}
-            title="Slåttemark"
-         >
-            <React.Fragment key=".0">
-
-               <a href="/kart"> Brukerhistorie 1 </a>
-            </React.Fragment>
-         </Accordion>
-         <Accordion color="lightCyan"
-            onToggleExpand={function noRefCheck() { }}
-            title="Stormflo ( NGU )"
-         >
-            <React.Fragment key=".0">
-               <p>Gudrun og Arne vil bygge hytte</p>
-               <p>Eiendommen de vil bygge på kan være berørt av flere ulike typer farer.</p>
-               <a href="/kart"> Se hytta i kartet her</a>
-            </React.Fragment>
-         </Accordion>
-
-      </Container>
-   );
-}
+                <Accordion  color="lightCyan"
+                    onToggleExpand={function noRefCheck(){}}
+                    title="Hul Eik"
+                    >
+                    <React.Fragment key=".0">
+                        <img src={tree} />
+                        <p>Synnøve ( 65) tannlege</p>
+                        <p>Hun tok over barndomshjemmet på Ullevål for noen år siden. Vedlikehold av huset og stell av den store hagen ble for mye for foreldrene hennes.</p>
+                        <p>Synnøves datter har nå stiftet familie, og sammen planlegger de å bygge en ny bolig på den store tomta.</p>
+                        <p>Synnøve har ikke behov for så mye plass og vil bo i den nye enheten, mens datteren og familien hennes vil ta over det gamle huset.</p>
+                        <p>Vil det være plass til å bygge et lite hus på tomta?</p>
+                       <a href="/kart">Sjekk kartet og utforsk mulighetene!</a>  
+                    </React.Fragment>
+                    </Accordion>
+                    <Accordion color="lightCyan"
+                    onToggleExpand={function noRefCheck(){}}
+                    title="Stormflo"
+                    >
+                    <React.Fragment key=".2">
+                    <p>Gudrun og Arne vil bygge hytte</p>
+                    <p>Eiendommen de vil bygge på kan være berørt av flere ulike typer farer.</p>
+                       <a href="/kart"> Se hytta i kartet her</a>  
+                    </React.Fragment>
+                    </Accordion>
+                    
+                    <Accordion color="lightCyan"
+                    onToggleExpand={function noRefCheck(){}}
+                    title="Slåttemark"
+                    >
+                    <React.Fragment key=".1">
+                        
+                       <a href="/kart"> TBA </a>  
+                    </React.Fragment>
+                    </Accordion>   
+                    <Accordion color="lightCyan"
+                    onToggleExpand={function noRefCheck(){}}
+                    title="Innkjørsel - fri sikt og sikkerhetssoner"
+                    >
+                    <React.Fragment key=".1">
+                        
+                       <a href="/kart"> TBA </a>  
+                    </React.Fragment>
+                    </Accordion>                    
+          
+    </Container>
+);
+}   
 export default Home;

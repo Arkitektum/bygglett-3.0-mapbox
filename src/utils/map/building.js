@@ -50,7 +50,7 @@ export async function createBuilding(map, location, altitude, building) {
    })
 }
 
-function handleObjectDragged(object, map) {
+export function handleObjectDragged(object, map) {
    const area = getObjectArea(object);
    map.getSource('object-area').setData(area);
 

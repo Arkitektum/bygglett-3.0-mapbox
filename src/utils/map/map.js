@@ -1,4 +1,4 @@
-import { Map, NavigationControl } from 'mapbox-gl';
+import mapboxgl, { Map, NavigationControl } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
 import { createNaturtyperUtvalgteLayer, createUllevålNaturtyperUtvalgteLayer, createullevålEiendomsgrense } from './geojson';
 import { createBuilding } from './building';
@@ -24,6 +24,7 @@ export function createMap(container, location) {
    });
 
    map.addControl(new NavigationControl());
+   map.addControl(new mapboxgl.ScaleControl());
 
    window.tb = new Threebox(map, map.getCanvas().getContext('webgl'), {
       defaultLights: true,

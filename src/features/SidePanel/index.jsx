@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useMap } from 'context/MapProvider';
 import { radiansToDegrees } from '@turf/helpers';
-import { getObjectArea } from 'utils/helpers';
 import { THREE } from 'threebox-plugin';
 import styles from './SidePanel.module.scss'
+import { handleObjectDragged } from 'utils/map/building';
 
 function SidePanel() {
    const [isActive, setIsActive] = useState(false);
@@ -19,27 +19,68 @@ function SidePanel() {
       const building = getBuilding();
       
       building.set({ worldTranslate: new THREE.Vector3(.015, 0, 0) });
-      updateObjectArea(building);
+      handleObjectDragged(building, map);
+   }
+   function moveRight() {
+      const building = getBuilding();
+      
+      building.set({ worldTranslate: new THREE.Vector3(-.015, 0, 0) });
+      handleObjectDragged(building, map);
+   }
+   function moveDown() {
+      const building = getBuilding();
+      
+      building.set({ worldTranslate: new THREE.Vector3(0, .015, 0) });
+      handleObjectDragged(building, map);
    }
 
+   function moveUp() {
+      const building = getBuilding();
+      
+      building.set({ worldTranslate: new THREE.Vector3(0, -.015, 0) });
+      handleObjectDragged(building, map);
+   }
+   function moveUpward() {
+      const building = getBuilding();
+      
+      building.set({ worldTranslate: new THREE.Vector3(0, 0, 0.05) });
+      handleObjectDragged(building, map);
+   }
+   function moveDownward() {
+      const building = getBuilding();
+      
+      building.set({ worldTranslate: new THREE.Vector3(0, 0, -0.05) });
+      handleObjectDragged(building, map);
+   }
    function rotateLeft() {
       const building = getBuilding();
       const degrees = radiansToDegrees(building.rotation.z);
 
       building.setRotation({ z: degrees + 5 });
-      updateObjectArea(building);
+      handleObjectDragged(building, map);
+   }
+   function rotateRight() {
+      const building = getBuilding();
+      const degrees = radiansToDegrees(building.rotation.z);
+
+      building.setRotation({ z: degrees - 5 });
+      handleObjectDragged(building, map);
+   }
+   function resetBuilding() {
+      const building = getBuilding();
+      console.log('hvor=' + building)
+      building.set({ worldTranslate: new THREE.Vector3(0, 0, 0) });
+      handleObjectDragged(building, map);
+      
    }
 
-   function updateObjectArea(building) {
-      const area = getObjectArea(building);
-      map.getSource('object-area').setData(area);
-   }
+
 
    return (
       <div className={styles.content}>
          <div className={styles.widthLabel}>
             <label htmlFor="reset">Nullstill visning</label>
-            <button id="reset" className={styles.btn}>
+            <button onClick={resetBuilding} id="reset" className={styles.btn}>
                <div className={styles.reset}></div>
             </button>
          </div>
@@ -47,13 +88,13 @@ function SidePanel() {
          <div className={styles.directions}>
             <div>
                <label className={styles.hidden} htmlFor="left">Sør</label>
-               <button id="left" className={styles.btn}>
+               <button id="left" onClick={moveRight} className={styles.btn}>
                   <div className={styles.arrow}></div>
                </button>
             </div>
             <div>
                <label className={styles.hidden} htmlFor="up">Nord</label>
-               <button id="up" className={styles.btn}>
+               <button id="up" onClick={moveDown} className={styles.btn}>
                   <div className={styles.rotateOnce}>
                      <div className={styles.arrow}></div>
                   </div>
@@ -69,7 +110,7 @@ function SidePanel() {
             </div>
             <div>
                <label className={styles.hidden} htmlFor="down">Øst</label>
-               <button id="down" className={styles.btn}>
+               <button id="down" onClick={moveUp} className={styles.btn}>
                   <div className={styles.rotateThird}>
                      <div className={styles.arrow}></div>
                   </div>
@@ -84,14 +125,14 @@ function SidePanel() {
          <div className={styles.rotations}>
             <button onClick={rotateLeft} className={styles.left}></button>
             <div className={styles.house3d}></div>
-            <button className={styles.right}></button>
+            <button onClick={rotateRight} className={styles.right}></button>
             <div>Rotere</div>
          </div>
 
          <div className={styles.elevations}>
-            <button className={styles.up}></button>
+            <button onClick={moveUpward} className={styles.up}></button>
             <div className={styles.house3d}></div>
-            <button className={styles.down}></button>
+            <button onClick={moveDownward} className={styles.down}></button>
             <div>Vertikalt</div>
          </div>
          <div className={styles.spm} onClick={handleClick} >
