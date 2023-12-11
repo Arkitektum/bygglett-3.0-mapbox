@@ -5,49 +5,49 @@ import { degreesToRadians, feature, radiansToLength } from '@turf/helpers';
 import { setIntersection, toggleDialog } from 'store/slices/mapSlice';
 import store from 'store';
 import GeoJSONReader from 'jsts/org/locationtech/jts/io/GeoJSONReader';
-//import GeoJSONWriter from 'jsts/org/locationtech/jts/io/GeoJSONWriter';
 import DistanceOp from 'jsts/org/locationtech/jts/operation/distance/DistanceOp';
 
 // TODO filter geoJson før import
 
-
-
-
-export function createBuilding(map, location, altitude, building) {
-   map.addLayer({
-      id: 'building-bygglett',
-      type: 'custom',
-      renderingMode: '3d',
-      onAdd: () => {
-         const scale = 0.6;
-
-         const options = {
-            obj: `/${building}.glb`,
-            type: 'glb',
-            scale: { x: scale, y: scale, z: scale },
-            units: 'meters',
-            anchor: 'center',
-            rotation: { x: 90, y: -90, z: 0 }
-         };
-
-         window.tb.loadObj(options, model => {
-            model.setCoords([location[0], location[1], altitude]);
-
-            addObjectLayer(map, model);
-            addObjectBufferLayer(map, model)
-
-            model.addEventListener('ObjectDragged', event => {
-               handleObjectDragged(event.target, map);
-            }, false);
-
-            window.tb.add(model);
-         });
-      },
-
-      render: () => {
-         window.tb.update();
-      }
-   });
+export async function createBuilding(map, location, altitude, building) {
+   return new Promise(resolve => {
+      map.addLayer({
+         id: 'building-bygglett',
+         type: 'custom',
+         renderingMode: '3d',
+         onAdd: () => {
+            const scale = 0.6;
+   
+            const options = {
+               obj: `/${building}.glb`,
+               type: 'glb',
+               scale: { x: scale, y: scale, z: scale },
+               units: 'meters',
+               anchor: 'center',
+               rotation: { x: 90, y: -90, z: 0 }
+            };
+   
+            window.tb.loadObj(options, model => {
+               model.setCoords([location[0], location[1], altitude]);
+   
+               addObjectLayer(map, model);
+               addObjectBufferLayer(map, model)
+   
+               model.addEventListener('ObjectDragged', event => {
+                  handleObjectDragged(event.target, map);
+               }, false);
+   
+               window.tb.add(model);
+               
+               resolve(model);
+            });
+         },
+   
+         render: () => {
+            window.tb.update();
+         }
+      });
+   })
 }
 
 function handleObjectDragged(object, map) {
@@ -58,8 +58,6 @@ function handleObjectDragged(object, map) {
       units: 'meters'
    })
   
-
-
    const reader = new GeoJSONReader();
    const areaGeometry = reader.read(area.geometry);
 

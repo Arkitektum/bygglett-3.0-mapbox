@@ -1,6 +1,6 @@
 import { Map, NavigationControl } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
-import { createNaturtyperUtvalgteLayer,createUllevålNaturtyperUtvalgteLayer,createullevålEiendomsgrense } from './geojson';
+import { createNaturtyperUtvalgteLayer, createUllevålNaturtyperUtvalgteLayer, createullevålEiendomsgrense } from './geojson';
 import { createBuilding } from './building';
 import { createBuildings } from './buildings';
 import { createTerrain } from './terrain';
@@ -8,12 +8,12 @@ import { createTerrain } from './terrain';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
-export function createMap(container, location, altitude, building) {
+export function createMap(container, location) {
    const target = {
       center: location,
       zoom: 18,
-      pitch: 60,
-      bearing: 200
+      pitch: 45,
+      bearing: 0
    };
 
    const map = new Map({
@@ -47,7 +47,7 @@ export function createMap(container, location, altitude, building) {
       createTerrain(map);
       createBuildings(map);
       //createWmsLayer(map);
-      createBuilding(map, location, altitude, building);
+      //createBuilding(map, location, altitude, building);
    });
 
    return map;

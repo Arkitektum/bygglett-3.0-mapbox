@@ -7,20 +7,24 @@ import { getContextType } from 'utils/geolett';
 import FeaturePopup from 'components/FeaturePopup';
 import styles from './MapView.module.scss'
 import Realestate from 'features/Realestate';
-
+import { createBuilding } from 'utils/map/building';
 
 function MapView() {
-   const { setMap, location, altitude, building } = useMap();
+   const { setMap, setBuilding, location, altitude, building } = useMap();
    const initRef = useRef(true);
    const mapElementRef = useRef(null);
-   const dialog = useSelector(state => state.map.dialog)        
-   
- 
+   const dialog = useSelector(state => state.map.dialog)
+
    useEffect(
       () => {
          if (initRef.current) {
             initRef.current = false;
             const map = createMap(mapElementRef.current, location, altitude, building);
+
+            map.on('style.load', async () => {
+               const model = await createBuilding(map, location, altitude, building);
+               setBuilding(model);
+            });
 
             map.on('click', 'hul-eik', event => {
                const props = event.features[0]?.properties;
@@ -29,33 +33,33 @@ function MapView() {
                   return;
                }
 
-               const { lng, lat } = event.lngLat;
                const contextType = getContextType(type => type.datasett.typeReferanse.kodeverdi === props.utvalgtNaturtypeTekst);
-         
+
                if (contextType !== null) {
-                  const html = renderToStaticMarkup(<FeaturePopup contextType={contextType} />);                  
+                  const html = renderToStaticMarkup(<FeaturePopup contextType={contextType} />);
                   document.getElementById('drawer').innerHTML += html;
                }
-            })
+            });
 
             setMap(map);
-         }         
+         }
       },
       [altitude, building, location, setMap]
    );
+   
    return (
       <div className={styles.mapContainer}>
          <div ref={mapElementRef} className={styles.map}></div>
          <div className={styles.infoDrawer} id="drawer">
-         <Realestate />                  
-         { dialog != null  ? 
-            (<div className={styles.content}>
-               <h3>{dialog.title} </h3>
-               <p>{dialog.body}</p>               
-               <strong>{dialog.tiltak}</strong>               
-               <p>{dialog.tiltakstekst}</p>                     
+            <Realestate />
+            {dialog != null ?
+               (<div className={styles.content}>
+                  <h3>{dialog.title} </h3>
+                  <p>{dialog.body}</p>
+                  <strong>{dialog.tiltak}</strong>
+                  <p>{dialog.tiltakstekst}</p>
                </div>) : null
-         }
+            }
          </div>
       </div>
    );
