@@ -1,6 +1,6 @@
 
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMap } from 'context/MapProvider';
 import { radiansToDegrees } from '@turf/helpers';
 import { THREE } from 'threebox-plugin';
@@ -75,6 +75,33 @@ function SidePanel() {
    }
 
 
+   const moveBuilding = (e) => {
+      var key_code = e.which || e.KeyCode;
+      switch (key_code) {
+         case 37: //left arrow key
+                moveLeft();
+                break;
+            case 38: //Up arrow key
+                moveUp();
+                break;
+            case 39: //right arrow key
+                moveRight();
+                break;
+            case 40: //down arrow key
+                moveDown();
+                break;
+            default: 
+               return;
+      }
+   }
+   useEffect(() => {
+      document.addEventListener("keydown", moveBuilding);
+      return () => document.removeEventListener("keydown", moveBuilding);
+   }, [moveBuilding]);
+   
+ 
+
+
 
    return (
       <div className={styles.content}>
@@ -143,7 +170,9 @@ function SidePanel() {
             For å flytte på bygningen i kartet så kan dette også gjøres med muspeker. Klikk på bygget så det blir grønt, hold shift tasten inne for å flytte horisontalt. Hold ctr tasten inne for å flytte vertikalt og alt tasten inne for å rotere bygget.
          </div>
       </div>
+      
    );
+  
 }
 
 export default SidePanel
