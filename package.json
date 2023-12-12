@@ -17,6 +17,7 @@
     "@turf/transform-rotate": "^6.5.0",
     "@types/jsts": "^0.17.22",
     "@watergis/mapbox-gl-pitch-toggle-control": "^1.0.3",
+    "axios": "^1.6.2",
     "dibk-design": "^3.6.1",
     "jsts": "^2.11.0",
     "mapbox-gl": "^2.15.0",
