@@ -13,12 +13,12 @@ function Map() {
    const building = 'garasje';
    const intersection = useSelector(state => state.map.intersection);
 
-   console.log((userstory.features[0].properties.realestatetotal * userstory.features[0].properties.possible) - userstory.features[0].properties.occupied + 'igjen som kan bygges :)')
+   //console.log((userstory.features[0].properties.realestatetotal * userstory.features[0].properties.possible) - userstory.features[0].properties.occupied + 'igjen som kan bygges :)')
 
    useEffect(
       () => {
          if (intersection !== null) {
-            console.log(intersection.properties.opphav);
+           null
          }
       },
       [intersection]

@@ -1,9 +1,10 @@
 import mapboxgl, { Map, NavigationControl } from 'mapbox-gl';
 import { Threebox } from 'threebox-plugin';
-import { createNaturtyperUtvalgteLayer, createUllevålNaturtyperUtvalgteLayer, createullevålEiendomsgrense } from './geojson';
-import { createBuilding } from './building';
+import { createNaturtyperUtvalgteLayer, createullevålEiendomsgrense } from './geojson';
 import { createBuildings } from './buildings';
 import { createTerrain } from './terrain';
+import  PitchToggle  from '@watergis/mapbox-gl-pitch-toggle-control';
+import '@watergis/mapbox-gl-pitch-toggle-control/css/styles.css';
 //import { createWmsLayer } from './wms';
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
@@ -24,7 +25,9 @@ export function createMap(container, location) {
    });
 
    map.addControl(new NavigationControl());
-   map.addControl(new mapboxgl.ScaleControl());
+   map.addControl(new mapboxgl.ScaleControl());   
+   map.addControl(new mapboxgl.FullscreenControl())
+   map.addControl(new PitchToggle({minpitchzoom: 0})) 
 
    window.tb = new Threebox(map, map.getCanvas().getContext('webgl'), {
       defaultLights: true,
@@ -36,7 +39,6 @@ export function createMap(container, location) {
    map.on('load', () => {
       createNaturtyperUtvalgteLayer(map);
       createullevålEiendomsgrense(map);
-      // createWmsLayer(map);
 
       setTimeout(() => {
          map.jumpTo(target);
@@ -48,7 +50,6 @@ export function createMap(container, location) {
       createTerrain(map);
       createBuildings(map);
       //createWmsLayer(map);
-      //createBuilding(map, location, altitude, building);
    });
 
    return map;
