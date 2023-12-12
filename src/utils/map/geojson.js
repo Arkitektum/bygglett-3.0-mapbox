@@ -21,7 +21,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
-      },     
+      },
       'buildings'
    );
    map.addLayer(
@@ -36,7 +36,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
-      },     
+      },
       'buildings'
    );
 }
@@ -55,7 +55,7 @@ export function createUllevålNaturtyperUtvalgteLayer(map) {
          'paint': {
             'fill-color': 'green',
             'fill-opacity': 0.4
-         },        
+         },
          'filter': ['all',
             ['==', 'utvalgtNat', 'UN03']
          ]
@@ -76,7 +76,25 @@ export function createullevålEiendomsgrense(map) {
          'source': 'ullevål_Eiendomsgrense',
          'paint': {
             'line-color': 'green',
-            'line-width':2
+            'line-width': 2
+         }
+      }
+   );
+};
+export function creatEiendomsTeig(map, eiendom_teig) {
+   map.addSource('Eiendoms_teig', {
+      'type': 'geojson',
+      'data': eiendom_teig
+   });
+
+   map.addLayer(
+      {
+         'id': 'Eiendoms_teig',
+         'type': 'fill',
+         'source': 'Eiendoms_teig',
+         'paint': {
+            'fill-color': 'green',
+            'fill-opacity': 0.2
          }
       }
    );
