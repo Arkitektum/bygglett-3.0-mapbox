@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from 'App';
 import Home from 'features/Home';
 import Map from 'features/Map';
+import Disclaimer from 'features/Disclaimer'
 
 const router = createBrowserRouter([
    {
@@ -16,8 +17,14 @@ const router = createBrowserRouter([
          {
             path: '/kart',
             element: <Map />,
-            index: true,
+            index: true,            
+         },
+         {
+         path: '/disclaimer',
+         element: <Disclaimer />,         
+         index: true,
          }
+         
       ]
    }
 ]);

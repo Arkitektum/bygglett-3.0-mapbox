@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import styles from './App.module.scss'
-import { NavigationBar } from 'dibk-design'
+import { NavigationBar, Footer } from 'dibk-design'
 
 function App() {
   return (      
@@ -14,8 +14,14 @@ function App() {
            <span>
             NB! Betaversjon av demonstrator - kun ment for test av funksjonalitet og ulike scenario
           </span>
-        </NavigationBar>
+        </NavigationBar>       
       <Outlet />
+      <Footer>
+          <span>
+           <a href="/Disclaimer">Disclaimer</a>
+          </span>
+        </Footer>
+      
       </div>      
   )
 }

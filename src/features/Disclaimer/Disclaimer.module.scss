@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+.home {   
+    color: $primary-dark-blue;
+    text-decoration-color: $primary-dark-blue;
+    display: flex;
+    align-items: center;
+}
+svg {
+    height: 30px; 
+    width: 30px;
+    margin-right: 10px;
+    path {
+        transition: ease-in-out 1s;
+        fill: $primary-dark-blue;
+        &:hover {
+            fill: $primary-light-blue;
+        } 
+    }
+    
+}
