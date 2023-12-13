@@ -60,8 +60,8 @@ export function createMap(container, location) {
    return map;
 }
 
-async function findEiendomsOmråde(lat, lon, radius) {
-    const url_omroder =`https://ws.geonorge.no/eiendom/v1/punkt/omrader?ost=${lon}&nord=${lat}&koordsys=4326&radius=${radius}&utkoordsys=4258&maksTreff=1`;
+async function findEiendomsOmråde(lat, lon, radius, treff=1) {
+    const url_omroder =`https://ws.geonorge.no/eiendom/v1/punkt/omrader?ost=${lon}&nord=${lat}&koordsys=4326&radius=${radius}&utkoordsys=4258&maksTreff=${treff}`;
    const response = await axios.get(url_omroder)
     return response.data.features[0]
  
