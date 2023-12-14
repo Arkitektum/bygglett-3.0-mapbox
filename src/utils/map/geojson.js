@@ -1,6 +1,7 @@
 import naturtyperUtvalgte from 'data/naturtyper-utvalgte.json';
 import ullevånaturtyperUtvalgte from 'data/Ullevaal_utvalget_naturtyper.json'
 import ullevålEiendomsgrense from 'data/Ullevaal_Oslo_25832_MatrikkelenEiendomskartTeig_eiendomsgrense.json'
+import { bufferAreaFromGeoJson } from 'utils/helpers';
 
 export function createNaturtyperUtvalgteLayer(map) {
    map.addSource('naturtyper-utvalgte', {
@@ -98,7 +99,33 @@ export function creatEiendomsTeig(map, eiendom_teig) {
          }
       }
    );
+   creatEiendomsFreeZone(map,eiendom_teig)
 };
+
+export function creatEiendomsFreeZone(map, eiendom_teig) {
+   
+   const buffer = bufferAreaFromGeoJson(eiendom_teig,-4)
+
+   map.addSource('Eiendomsgrense_bygg_Tillatt_Line', {
+      'type': 'geojson',
+      'data': buffer
+   });
+
+   map.addLayer(
+      {
+         'id': 'Eiendomsgrense_bygg_Tillatt_Line',
+         'type': 'line',
+         'source': 'Eiendomsgrense_bygg_Tillatt_Line',
+         'paint': {
+            'line-color': 'green',
+            'line-width': 4,
+            'line-dasharray': [2, 1]
+         }
+      },
+   );
+};
+
+
 
 
 
