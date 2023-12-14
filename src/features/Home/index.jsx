@@ -11,7 +11,7 @@ function Home() {
             </React.Fragment>
          </Header>
          <Paper>
-            <p>Det finnes i alt 15 sektormyndigheter som kan ha innsigelser mot en byggesøknad. Miljødirektoratet er en av dem. Ofte vet
+            <p>Det finnes i alt 15 sektormyndigheter som kan ha uttalelser i en byggesak. Miljødirektoratet er en av dem. Ofte vet
                ikke søkerne om disse forholdene på forhånd og det er utfordrende for dem å forstå hva de betyr for søknaden. De dukker
                gjerne opp sent i prosessen, etter at søkeren har investert mye i prosjektet, både emosjonelt, i tid brukt til planlegging og
                kanskje også kostnader, for eksempel til arkitekthjelp.

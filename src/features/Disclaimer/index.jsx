@@ -21,24 +21,28 @@ return (
          <Header size={3}>Ansvarsfraskrivelse for programvaredemonstrasjon</Header>
 
 <p>DIBK leverer denne programvaren kun for demonstrasjonsformål. Ved å bruke eller få tilgang til programvaren godtar du å være bundet av vilkårene og betingelsene som er beskrevet i denne ansvarsfraskrivelsen. Denne programvaren er ikke ment for bruk som dokumentasjon for byggesøknader.</p>
-
+<pre>Oppdatert 13.12.2023</pre>
 <Header size={5}> Hensikt</Header>
 Denne programvaren er utformet utelukkende for demonstrasjons- og pedagogiske formål. Den er ikke ment å tjene som dokumentasjon for byggeapplikasjoner, og brukere bør ikke stole på den for slike formål.
 
 <Header size={5}>Begrenset funksjonalitet</Header>
 Funksjonene og funksjonene til denne programvaren under demonstrasjonen kan være begrenset og representerer ikke de fullstendige egenskapene til sluttproduktet. Den er ikke egnet for konstruksjonsdokumentasjon eller noen kritiske applikasjoner.
+Bygglett 3.0 fraskriver seg ethvert ansvar for eventuelle feil, mangler eller unøyaktigheter i kartdataene eller kartlagene.
 
 <Header size={5}>Ingen garanti</Header>
-Denne programvaren leveres "som den er" og uten noen form for garanti, enten det er uttrykkelig eller underforstått. DIBK gir ingen representasjoner eller garantier angående nøyaktigheten, fullstendigheten eller påliteligheten til programvaren for konstruksjonsdokumentasjon.
+Denne programvaren leveres &quot;som den er&quot;  og uten noen form for garanti, enten det er uttrykkelig eller underforstått. DIBK gir ingen representasjoner eller garantier angående nøyaktigheten, fullstendigheten eller påliteligheten til programvaren for konstruksjonsdokumentasjon.
 
 <Header size={5}>Brukeransvar</Header>
-Brukere er eneansvarlig for å verifisere all informasjon innhentet fra programvaren og for å søke profesjonell rådgivning skreddersydd for deres spesifikke behov. Denne programvaren erstatter ikke profesjonell vurdering i byggedokumentasjon.
+Brukere er eneansvarlig for å verifisere all informasjon innhentet fra programvaren og for å søke profesjonell rådgivning skreddersydd for deres spesifikke behov. Denne programvaren erstatter ikke profesjonell vurdering i byggedokumentasjon. 
+Brukeren er ansvarlig for å tolke og bruke kartinformasjonen på egen risiko. Bygglett 3.0 påtar seg ikke ansvar for eventuelle skader eller tap som følge av brukerens handlinger basert på kartdataene.
 
 <Header size={5}>Ikke for operativ bruk</Header>
 Denne programvaren skal ikke under noen omstendigheter brukes til drifts- eller produksjonsformål relatert til byggeapplikasjoner. Det er ikke en erstatning for industristandard dokumentasjonspraksis og verktøy.
+DIBK forbeholder seg retten til å endre eller oppdatere kartene, kartlagene eller programvaren uten forhåndsvarsel. Det er brukerens ansvar å holde seg oppdatert om eventuelle endringer.
 
 <Header size={5}>Ansvarsbegrensning</Header>
-DIBK skal ikke holdes ansvarlig for noen direkte, indirekte, tilfeldige, spesielle eller følgeskader som oppstår som følge av bruk eller manglende evne til å bruke denne programvaren, selv om det er gjort oppmerksom på muligheten for slike skader.
+DIBK skal ikke holdes ansvarlig for noen direkte, indirekte, tilfeldige, spesielle eller følgeskader som oppstår som følge av bruk eller manglende evne til å bruke denne programvaren, selv om det er gjort oppmerksom på muligheten for slike skader. Kartene og kartlagene som tilbys i Bygglett 3.0 er kun ment for generell informasjon og veiledning. Det er viktig å presisere at kartdata kan være unøyaktige eller foreldede.
+Bygglett 3.0 kan inneholde lenker til tredjeparts nettsteder eller tjenester. DIBK påtar seg ikke ansvar for innholdet eller personvernpraksisen til slike nettsteder eller tjenester.
 
 <Header size={5}>Aksept av vilkår</Header>
 Ved å bruke denne programvaren, erkjenner du at du har lest, forstått og godtatt vilkårene og betingelsene som er beskrevet i denne ansvarsfraskrivelsen. Hvis du ikke er enig i disse vilkårene, vennligst avstå fra å bruke programvaren.

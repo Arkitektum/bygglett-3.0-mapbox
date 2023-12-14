@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, redirect } from 'react-router-dom';
 import App from 'App';
 import Home from 'features/Home';
 import Map from 'features/Map';
@@ -15,14 +15,18 @@ const router = createBrowserRouter([
             index: true,
          },
          {
-            path: '/kart',
+            path: '/kart/:building/:location',
             element: <Map />,
             index: true,            
-         },
+         },         
          {
          path: '/disclaimer',
          element: <Disclaimer />,         
          index: true,
+         },
+         {
+            path: "*",
+            loader: () => redirect("/")
          }
          
       ]
