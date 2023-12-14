@@ -38,7 +38,7 @@ function Home() {
                         <p>Synnøves datter har nå stiftet familie, og sammen planlegger de å bygge en ny bolig på den store tomta.</p>
                         <p>Synnøve har ikke behov for så mye plass og vil bo i den nye enheten, mens datteren og familien hennes vil ta over det gamle huset.</p>
                         <p>Vil det være plass til å bygge et lite hus på tomta?</p>
-                       <a href="/kart">Sjekk kartet og utforsk mulighetene!</a>  
+                       <a href="/kart/oslo/garasje">Sjekk kartet og utforsk mulighetene!</a>  
                     </React.Fragment>
                     </Accordion>
                     <Accordion color="lightCyan"

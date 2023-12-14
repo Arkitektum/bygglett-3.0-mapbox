@@ -15,7 +15,7 @@ const router = createBrowserRouter([
             index: true,
          },
          {
-            path: '/kart/:building/:location',
+            path: '/kart/:location/:building',
             element: <Map />,
             index: true,            
          },         
