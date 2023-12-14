@@ -15,7 +15,7 @@ export function createMap(container, location) {
    const target = {
       center: location,
       zoom: 18,
-      pitch: 45,
+      pitch: 0,
       bearing: 0
    };
 
