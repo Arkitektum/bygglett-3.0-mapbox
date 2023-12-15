@@ -23,7 +23,8 @@ export function createMap(container, location) {
    const map = new Map({
       accessToken: ACCESS_TOKEN,
       container,
-      style: 'mapbox://styles/mapbox/streets-v12',
+      // style: 'mapbox://styles/mapbox/light-v11',
+      style:'mapbox://styles/mgtuser/clq6hqnqg001a01o97vv29h7v',
       ...target
    });
 
@@ -53,10 +54,10 @@ export function createMap(container, location) {
    });
 
    map.on('style.load', () => {
-      createWmsLayer(map,fkb4Graaton,'topo4graatone');
+      // createWmsLayer(map,fkb4Graaton,'topo4graatone');
       // createBackgroundGraaton(map)
       createTerrain(map);
-      createBuildings(map);
+      // createBuildings(map);
       
    });
    

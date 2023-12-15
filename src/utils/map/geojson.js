@@ -22,8 +22,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
-      },
-      'buildings'
+      }
    );
    map.addLayer(
       {
@@ -37,8 +36,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNaturtype', 'UN03']
          ]
-      },
-      'buildings'
+      }
    );
 }
 
@@ -60,8 +58,7 @@ export function createUllevålNaturtyperUtvalgteLayer(map) {
          'filter': ['all',
             ['==', 'utvalgtNat', 'UN03']
          ]
-      },
-      'buildings'
+      }
    );
 }
 export function createullevålEiendomsgrense(map) {
@@ -100,6 +97,8 @@ export function creatEiendomsTeig(map, eiendom_teig) {
       }
    );
    creatEiendomsFreeZone(map,eiendom_teig)
+   console.log('Buildings:{["type": "111 - Enebolig","type": "181 - Garasjeuthus anneks til bolig",], AREAL = !??!?!}')
+   console.log('Eidoms teig {Areal=noko,}')
 };
 
 export function creatEiendomsFreeZone(map, eiendom_teig) {
@@ -117,8 +116,8 @@ export function creatEiendomsFreeZone(map, eiendom_teig) {
          'type': 'line',
          'source': 'Eiendomsgrense_bygg_Tillatt_Line',
          'paint': {
-            'line-color': 'green',
-            'line-width': 4,
+            'line-color': 'red',
+            'line-width': 1,
             'line-dasharray': [2, 1]
          }
       },
