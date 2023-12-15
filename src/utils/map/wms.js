@@ -1,11 +1,9 @@
-const stormfloWmsUrl = import.meta.env.VITE_WMS_STORMFLO_URL;
 
-export function createWmsLayer(map) {
-   map.addSource('stormflo', {
+export function createWmsLayer(map, wmsUrl,layerName){
+
+   map.addSource(layerName, {
       type: 'raster',
-      tiles: [
-         stormfloWmsUrl
-      ],
+      tiles: [wmsUrl],
       tileSize: 512,
       minzoom: 14,
       maxzoom: 18
@@ -13,11 +11,10 @@ export function createWmsLayer(map) {
 
    map.addLayer(
       {
-         'id': 'stormflo',
+         'id': layerName,
          'type': 'raster',
-         'source': 'stormflo',
+         'source': layerName,
          'paint': {},
-      },
-      'building'
+      }
    );
 }
