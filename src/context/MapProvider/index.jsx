@@ -1,6 +1,6 @@
 import { createContext, useContext, useRef, useState } from 'react';
 
-export default function MapProvider({ location, altitude, building, children }) {
+export default function MapProvider({ location, building, children }) {
    const [map, setMap] = useState(null);
    const buildingRef = useRef(null);
 
@@ -13,7 +13,7 @@ export default function MapProvider({ location, altitude, building, children }) 
    }
 
    return (
-      <MapContext.Provider value={{ map, setMap, getBuilding, setBuilding, location, altitude, building }}>
+      <MapContext.Provider value={{ map, setMap, getBuilding, setBuilding, location, building }}>
          {children}
       </MapContext.Provider>
    );

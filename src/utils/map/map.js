@@ -6,15 +6,13 @@ import { createTerrain } from './terrain';
 import  PitchToggle  from '@watergis/mapbox-gl-pitch-toggle-control';
 import '@watergis/mapbox-gl-pitch-toggle-control/css/styles.css';
 import axios from 'axios';
-import { useCallback } from 'react';
-import { createWmsLayer } from './wms';
 
 const fkb4Graaton = import.meta.env.VITE_WMS_FKB4_GRAATON;
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 export function createMap(container, location) {
    const target = {
-      center: location,
+      center: [location.lat, location.long],
       zoom: 18,
       pitch: 0,
       bearing: 0
@@ -43,8 +41,7 @@ export function createMap(container, location) {
    map.on('load', async () => {
       createNaturtyperUtvalgteLayer(map);
       createullevålEiendomsgrense(map);
-
-      const eiendoms_teig= await findEiendomsOmråde(location[1],location[0],100)
+      const eiendoms_teig= await findEiendomsOmråde(location.long,location.lat,100)
       creatEiendomsTeig(map,eiendoms_teig)
 
       setTimeout(() => {

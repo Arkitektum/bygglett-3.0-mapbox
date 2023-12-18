@@ -16,7 +16,7 @@ export function createNaturtyperUtvalgteLayer(map) {
          'source': 'naturtyper-utvalgte',
          'paint': {
             'line-color': 'red',
-            'line-width': 4,
+            'line-width': 1,
             'line-dasharray': [2, 1]
          },
          'filter': ['all',

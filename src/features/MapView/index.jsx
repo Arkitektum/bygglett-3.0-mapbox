@@ -10,7 +10,7 @@ import Realestate from 'features/Realestate';
 import { createBuilding } from 'utils/map/building';
 
 function MapView() {
-   const { setMap, setBuilding, location, altitude, building } = useMap();
+   const { setMap, setBuilding, location, building } = useMap();
    const initRef = useRef(true);
    const mapElementRef = useRef(null);
    const dialog = useSelector(state => state.map.dialog)
@@ -19,10 +19,10 @@ function MapView() {
       () => {
          if (initRef.current) {
             initRef.current = false;
-            const map = createMap(mapElementRef.current, location, altitude, building);
+            const map = createMap(mapElementRef.current, location, building);
 
             map.on('style.load', async () => {
-               const model = await createBuilding(map, location, altitude, building);
+               const model = await createBuilding(map, location, building);
                setBuilding(model);
             });
 
@@ -44,7 +44,7 @@ function MapView() {
             setMap(map);
          }
       },
-      [altitude, building, location, setMap]
+      [building, location, setMap]
    );
    
    return (

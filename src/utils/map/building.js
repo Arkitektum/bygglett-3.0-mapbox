@@ -9,7 +9,7 @@ import DistanceOp from 'jsts/org/locationtech/jts/operation/distance/DistanceOp'
 
 // TODO filter geoJson før import
 
-export async function createBuilding(map, location, altitude, building) {
+export async function createBuilding(map, location, building) {
    return new Promise(resolve => {
       map.addLayer({
          id: 'building-bygglett',
@@ -28,7 +28,7 @@ export async function createBuilding(map, location, altitude, building) {
             };
    
             window.tb.loadObj(options, model => {
-               model.setCoords([location[0], location[1], altitude]);
+               model.setCoords([location.lat, location.long, location.altitude]);
    
                addObjectLayer(map, model);
                addObjectBufferLayer(map, model)

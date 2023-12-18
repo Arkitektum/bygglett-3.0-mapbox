@@ -1,18 +1,21 @@
-import userstory from 'data/location.json'
+import locations from 'data/location.json'
+import { useParams } from "react-router-dom";
 
-const location = [userstory.features[0].properties.locationlat,  userstory.features[0].properties.locationlong];   
+
 
 
 
 function Realestate () {
+
+    const {location} = useParams();
 return(
     <div>
         <h3>Om eiendommen</h3>
         <p>
-           Total kvadratmeter for tomt: <strong>{userstory.features[0].properties.realestatetotal}  </strong> <br />     
-           Utnyttelsesgraden er <strong>{userstory.features[0].properties.possible} %</strong><br />
-           Eksisternde bebygd areal er:<strong> {userstory.features[0].properties.occupied} BYA</strong><br />
-           Du kan bygge totalt <strong>{(userstory.features[0].properties.realestatetotal * userstory.features[0].properties.possible) - userstory.features[0].properties.occupied} BYA</strong>
+           Total kvadratmeter for tomt: <strong>{locations[location].realestatetotal}  </strong> <br />     
+           Utnyttelsesgraden er <strong> %</strong><br />
+           Eksisternde bebygd areal er:<strong>  BYA</strong><br />
+           Du kan bygge totalt <strong> BYA</strong>
         </p>
         </div>
     );

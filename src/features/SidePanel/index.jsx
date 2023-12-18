@@ -2,12 +2,18 @@
 
 import { useEffect, useState } from 'react';
 import { useMap } from 'context/MapProvider';
+import { useParams } from "react-router-dom";
 import { radiansToDegrees } from '@turf/helpers';
 import { THREE } from 'threebox-plugin';
 import styles from './SidePanel.module.scss'
 import { handleObjectDragged } from 'utils/map/building';
+import locations from 'data/location.json';
+
+
 
 function SidePanel() {
+   const { location,building } = useParams();   
+   
    const [isActive, setIsActive] = useState(false);
    const { map, getBuilding } = useMap();
 
@@ -16,63 +22,63 @@ function SidePanel() {
    }
 
    function moveLeft() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(.015, 0, 0) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(.015, 0, 0) });
+      handleObjectDragged(hus, map);
    }
    function moveRight() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(-.015, 0, 0) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(-.015, 0, 0) });
+      handleObjectDragged(hus, map);
    }
    function moveDown() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(0, .015, 0) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(0, .015, 0) });
+      handleObjectDragged(hus, map);
    }
 
    function moveUp() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(0, -.015, 0) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(0, -.015, 0) });
+      handleObjectDragged(hus, map);
    }
    function moveUpward() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(0, 0, 0.05) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(0, 0, 0.05) });
+      handleObjectDragged(hus, map);
    }
    function moveDownward() {
-      const building = getBuilding();
+      const hus = getBuilding();
       
-      building.set({ worldTranslate: new THREE.Vector3(0, 0, -0.05) });
-      handleObjectDragged(building, map);
+      hus.set({ worldTranslate: new THREE.Vector3(0, 0, -0.05) });
+      handleObjectDragged(hus, map);
    }
    function rotateLeft() {
-      const building = getBuilding();
-      const degrees = radiansToDegrees(building.rotation.z);
+      const hus = getBuilding();
+      const degrees = radiansToDegrees(hus.rotation.z);
 
-      building.setRotation({ z: degrees + 5 });
-      handleObjectDragged(building, map);
+      hus.setRotation({ z: degrees + 5 });
+      handleObjectDragged(hus, map);
    }
    function rotateRight() {
-      const building = getBuilding();
-      const degrees = radiansToDegrees(building.rotation.z);
+      const hus = getBuilding();
+      const degrees = radiansToDegrees(hus.rotation.z);
 
-      building.setRotation({ z: degrees - 5 });
-      handleObjectDragged(building, map);
+      hus.setRotation({ z: degrees - 5 });
+      handleObjectDragged(hus, map);
    }
    function resetBuilding() {
-      const building = getBuilding();
-      console.log('hvor=' + building)
-      building.set({ worldTranslate: new THREE.Vector3(0, 0, 0) });
-      handleObjectDragged(building, map);
-      
+      const hus = getBuilding();
+      hus.setCoords([locations[location].lat, locations[location].long, locations[location].altitude] )
+      hus.set({rotation: {x:0,y:0,z:0}})
+      handleObjectDragged(hus, map);      
    }
+   
 
 
    const moveBuilding = (e) => {
@@ -111,6 +117,7 @@ function SidePanel() {
       <div className={styles.content}>
          <div className={styles.widthLabel}>
             <label htmlFor="reset">Nullstill visning</label>
+            
             <button onClick={resetBuilding} id="reset" className={styles.btn}>
                <div className={styles.reset}></div>
             </button>
