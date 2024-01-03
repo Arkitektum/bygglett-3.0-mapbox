@@ -8,7 +8,6 @@ const router = createBrowserRouter([
    {
       id: 'root',
       element: <App />,
-      basename: '/bygglett-3.0-mapbox',
       children: [
          {
             path: '/',
@@ -32,6 +31,8 @@ const router = createBrowserRouter([
          
       ]
    }
-]);
+], {
+   basename: '/bygglett-3.0-mapbox'
+});
 
 export default router;
