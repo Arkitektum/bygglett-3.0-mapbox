@@ -23,12 +23,7 @@ const router = createBrowserRouter([
          path: '/disclaimer',
          element: <Disclaimer />,         
          index: true,
-         },
-         {
-            path: "*",
-            loader: () => redirect("/")
          }
-         
       ]
    }
 ]);
