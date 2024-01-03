@@ -19,7 +19,7 @@ export default defineConfig({
          '@': path.resolve(__dirname, './src'),
       }
    },
-   base: 'bygglett-3.0-mapbox/',
+   base: '/bygglett-3.0-mapbox/',
       root: '',
       build: {
         outDir: 'docs'
