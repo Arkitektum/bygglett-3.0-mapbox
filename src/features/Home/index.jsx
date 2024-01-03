@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, ContentBox, Container, Accordion, Paper } from 'dibk-design';
 import tree from '../../assets/gfx/oak-tree.svg';
+import { Link } from 'react-router-dom';
 
 function Home() {
    return (
@@ -39,6 +40,7 @@ function Home() {
                         <p>Synnøve har ikke behov for så mye plass og vil bo i den nye enheten, mens datteren og familien hennes vil ta over det gamle huset.</p>
                         <p>Vil det være plass til å bygge et lite hus på tomta?</p>
                        <a href="/kart/oslo/garasje">Sjekk kartet og utforsk mulighetene!</a>  
+                       <Link to="/kart/oslo/garasje">Sjekk kartet og utforsk mulighetene! 𓀬</Link>
                     </React.Fragment>
                     </Accordion>
                     <Accordion color="lightCyan"
