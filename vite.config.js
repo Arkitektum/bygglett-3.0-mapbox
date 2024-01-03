@@ -18,5 +18,10 @@ export default defineConfig({
       alias: {
          '@': path.resolve(__dirname, './src'),
       }
-   }
+   },
+   base: 'bygglett-3.0-mapbox/',
+      root: '',
+      build: {
+        outDir: 'docs'
+      }
 });
